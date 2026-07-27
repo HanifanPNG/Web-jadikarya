@@ -1,12 +1,8 @@
-"use client";
-
-import { motion } from "framer-motion";
 import {
   MapPin,
   Phone,
   Mail,
   Clock,
-  Globe,
   ArrowRight,
   ShieldCheck,
   Facebook,
@@ -14,7 +10,6 @@ import {
   Youtube,
   MessageCircle,
 } from "lucide-react";
-import Link from "next/link";
 
 export default function PemerintahDanKontak() {
   const quickLinks = [
@@ -41,13 +36,13 @@ export default function PemerintahDanKontak() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12">
           
           {/* Column 1: Brand & Identity (lg:col-span-4) */}
-          <div className="lg:col-span-4 space-y-5">
+          <div className="lg:col-span-4 space-y-5" data-aos="fade-up">
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 rounded-full bg-gradient-to-tr from-amber-500 to-amber-300 flex items-center justify-center shadow-lg">
-                <span className="text-[#0A4532] font-serif font-bold text-2xl">J</span>
+                <span className="text-[#0A4532] font-inter font-bold text-2xl">J</span>
               </div>
               <div>
-                <h3 className="font-serif font-bold text-2xl text-[#FFE7D2] tracking-wide">
+                <h3 className="font-inter font-bold text-2xl text-[#FFE7D2] tracking-wide">
                   Desa Jadikarya
                 </h3>
                 <p className="text-xs text-white/70 font-medium">
@@ -86,8 +81,8 @@ export default function PemerintahDanKontak() {
           </div>
 
           {/* Column 2: Navigasi Cepat (lg:col-span-2) */}
-          <div className="lg:col-span-2 space-y-4">
-            <h4 className="font-serif font-bold text-lg text-[#FFE7D2] tracking-wide relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-10 after:h-0.5 after:bg-[#FFE7D2]">
+          <div className="lg:col-span-2 space-y-4" data-aos="fade-up" data-aos-delay="100">
+            <h4 className="font-inter font-bold text-lg text-[#FFE7D2] tracking-wide relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-10 after:h-0.5 after:bg-[#FFE7D2]">
               Navigasi Cepat
             </h4>
             <ul className="space-y-2.5 pt-2">
@@ -106,8 +101,8 @@ export default function PemerintahDanKontak() {
           </div>
 
           {/* Column 3: Alamat & Kontak Resmi (lg:col-span-3) */}
-          <div className="lg:col-span-3 space-y-4">
-            <h4 className="font-serif font-bold text-lg text-[#FFE7D2] tracking-wide relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-10 after:h-0.5 after:bg-[#FFE7D2]">
+          <div className="lg:col-span-3 space-y-4" data-aos="fade-up" data-aos-delay="200">
+            <h4 className="font-inter font-bold text-lg text-[#FFE7D2] tracking-wide relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-10 after:h-0.5 after:bg-[#FFE7D2]">
               Kontak Kantor Desa
             </h4>
 
@@ -134,8 +129,8 @@ export default function PemerintahDanKontak() {
           </div>
 
           {/* Column 4: Peta Lokasi Interactive (lg:col-span-3) */}
-          <div className="lg:col-span-3 space-y-3">
-            <h4 className="font-serif font-bold text-lg text-[#FFE7D2] tracking-wide relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-10 after:h-0.5 after:bg-[#FFE7D2]">
+          <div className="lg:col-span-3 space-y-3" data-aos="fade-up" data-aos-delay="300">
+            <h4 className="font-inter font-bold text-lg text-[#FFE7D2] tracking-wide relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-10 after:h-0.5 after:bg-[#FFE7D2]">
               Peta Lokasi Desa
             </h4>
             <div className="w-full h-44 rounded-2xl overflow-hidden shadow-lg border-2 border-white/20 bg-black/20">

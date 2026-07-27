@@ -1,13 +1,21 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 
 export default function Navbar() {
+  const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeNav, setActiveNav] = useState("beranda");
+
+  useEffect(() => {
+    if (pathname === "/profil-desa") setActiveNav("profil");
+    else if (pathname === "/") setActiveNav("beranda");
+    else setActiveNav("");
+  }, [pathname]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,11 +30,10 @@ export default function Navbar() {
   }, []);
 
   const navItems = [
-    { id: "beranda", label: "Beranda", href: "#hero" },
-    { id: "profil", label: "Profil Desa", href: "#profil-desa" },
-    { id: "potensi", label: "Potensi Desa", href: "#potensi-desa" },
-    { id: "peta", label: "Peta Potensi", href: "#potensi-desa" },
-    { id: "kontak", label: "Kontak", href: "#pemerintah-kontak" },
+    { id: "beranda", label: "Beranda", href: "/", isPage: true },
+    { id: "profil", label: "Profil Desa", href: "/profil-desa", isPage: true },
+    { id: "potensi", label: "Potensi Desa", href: "/#potensi-desa", isPage: false },
+    { id: "kontak", label: "Kontak", href: "/#pemerintah-kontak", isPage: false },
   ];
 
   return (
@@ -37,24 +44,39 @@ export default function Navbar() {
           : "bg-transparent py-6"
       }`}
     >
-      {/* Full width container with minimal side padding matching screenshot */}
       <div className="w-full px-6 sm:px-12 lg:px-16 flex items-center justify-between">
         
         {/* Left Brand Logo */}
-        <Link href="#hero" className="flex items-center gap-3 group">
+        <Link href="/" className="flex items-center gap-3 group">
           <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-amber-500 to-amber-300 flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
-            <span className="text-[#0A4532] font-serif font-bold text-xl">J</span>
+            <span className="text-[#0A4532] font-inter font-bold text-xl">J</span>
           </div>
-          <span className="font-serif text-white font-bold text-xl sm:text-2xl tracking-wide group-hover:text-[#FFE7D2] transition-colors">
+          <span className="font-inter text-white font-bold text-xl sm:text-2xl tracking-wide group-hover:text-[#FFE7D2] transition-colors">
             Desa Jadikarya
           </span>
         </Link>
 
-        {/* Right Navigation Links with Underline for Active Menu */}
+        {/* Right Navigation Links */}
         <nav className="hidden md:flex items-center space-x-8">
           {navItems.map((item) => {
             const isActive = activeNav === item.id;
-            return (
+            return item.isPage ? (
+              <Link
+                key={item.id}
+                href={item.href}
+                onClick={() => setActiveNav(item.id)}
+                className={`relative py-1 text-sm sm:text-base font-medium transition-all duration-200 ${
+                  isActive
+                    ? "text-white font-semibold"
+                    : "text-white/80 hover:text-white"
+                }`}
+              >
+                {item.label}
+                {isActive && (
+                  <span className="absolute left-0 right-0 bottom-[-4px] h-[3px] bg-[#FFE7D2] rounded-full shadow-sm" />
+                )}
+              </Link>
+            ) : (
               <a
                 key={item.id}
                 href={item.href}
@@ -66,9 +88,8 @@ export default function Navbar() {
                 }`}
               >
                 {item.label}
-                {/* Underline for active menu item */}
                 {isActive && (
-                  <span className="absolute left-0 right-0 bottom-[-4px] h-[3px] bg-[#0A4532] rounded-full shadow-sm" />
+                  <span className="absolute left-0 right-0 bottom-[-4px] h-[3px] bg-[#FFE7D2] rounded-full shadow-sm" />
                 )}
               </a>
             );
@@ -89,10 +110,27 @@ export default function Navbar() {
 
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-black/90 backdrop-blur-xl border-b border-white/10 px-6 pt-4 pb-6 space-y-3 animate-fadeIn">
+        <div className="md:hidden bg-black/90 backdrop-blur-xl border-b border-white/10 px-6 pt-4 pb-6 space-y-3 animate-fade-in">
           {navItems.map((item) => {
             const isActive = activeNav === item.id;
-            return (
+            const baseClass = `block py-2 text-base font-medium transition-all ${
+              isActive
+                ? "text-[#FFE7D2] font-bold border-l-4 border-[#FFE7D2] pl-3"
+                : "text-white/90 hover:text-white pl-3"
+            }`;
+            return item.isPage ? (
+              <Link
+                key={item.id}
+                href={item.href}
+                onClick={() => {
+                  setActiveNav(item.id);
+                  setMobileMenuOpen(false);
+                }}
+                className={baseClass}
+              >
+                {item.label}
+              </Link>
+            ) : (
               <a
                 key={item.id}
                 href={item.href}
@@ -100,11 +138,7 @@ export default function Navbar() {
                   setActiveNav(item.id);
                   setMobileMenuOpen(false);
                 }}
-                className={`block py-2 text-base font-medium transition-all ${
-                  isActive
-                    ? "text-[#FFE7D2] font-bold border-l-4 border-[#0A4532] pl-3"
-                    : "text-white/90 hover:text-white pl-3"
-                }`}
+                className={baseClass}
               >
                 {item.label}
               </a>

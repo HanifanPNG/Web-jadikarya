@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 
@@ -81,11 +80,8 @@ export default function ProfilDanPotensiDesa() {
       <section id="profil-desa" className="w-full bg-[#0A4532] text-white py-12 lg:py-16 overflow-hidden">
         <div className="w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           {/* Left Content (Text) */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
+          <div
+            data-aos="fade-right"
             className="lg:col-span-6 px-6 sm:px-10 lg:pl-16 lg:pr-8 space-y-6"
           >
             <div className="inline-flex items-center gap-3 text-[#FFE7D2] font-semibold text-sm sm:text-base tracking-widest uppercase">
@@ -104,14 +100,11 @@ export default function ProfilDanPotensiDesa() {
                 Lihat Profil Desa <ArrowRight size={18} />
               </a>
             </div>
-          </motion.div>
+          </div>
 
           {/* Right Image (W-FULL & Arch Corner Top-Left) */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
+          <div
+            data-aos="fade-left"
             className="lg:col-span-6 w-full"
           >
             <div className="relative w-full h-[320px] sm:h-[400px] lg:h-[480px] rounded-tl-[140px] sm:rounded-tl-[180px] lg:rounded-tl-[220px] overflow-hidden shadow-2xl">
@@ -123,7 +116,7 @@ export default function ProfilDanPotensiDesa() {
                 className="object-cover object-center hover:scale-105 transition-transform duration-700"
               />
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -132,23 +125,20 @@ export default function ProfilDanPotensiDesa() {
         
         {/* Dynamic Background Image changing with active card photo */}
         <div className="absolute inset-0 z-0">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={`${activeSector.id}-${currentImageIndex}`}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.6, ease: "easeInOut" }}
-              className="absolute inset-0"
+          {potensiSectors.map((sector, idx) => (
+            <div
+              key={sector.id}
+              className="absolute inset-0 transition-opacity duration-700 ease-in-out"
+              style={{ opacity: activeSectorIndex === idx ? 1 : 0 }}
             >
               <Image
-                src={activeSector.images[currentImageIndex]}
-                alt={activeSector.title}
+                src={sector.images[currentImageIndex]}
+                alt={sector.title}
                 fill
                 className="object-cover object-center"
               />
-            </motion.div>
-          </AnimatePresence>
+            </div>
+          ))}
 
           {/* Linear Gradient Overlay: Solid #0A4532 on left (opacity 100%), fading to transparent on right (opacity 0%) */}
           <div className="absolute inset-0 bg-gradient-to-r from-[#0A4532] via-[#0A4532]/75 to-transparent" />
@@ -158,9 +148,12 @@ export default function ProfilDanPotensiDesa() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           
           {/* Header Row: Title Left, CTA Right */}
-          <div className="flex items-center justify-between gap-4">
+          <div
+            data-aos="fade-up"
+            className="flex items-center justify-between gap-4"
+          >
             <div className="space-y-1">
-              <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold tracking-widest text-[#FFE7D2] uppercase">
+              <h3 className="font-inter text-2xl sm:text-3xl md:text-4xl font-bold tracking-widest text-[#FFE7D2] uppercase">
                 POTENSI DESA
               </h3>
               <div className="w-32 sm:w-44 h-1 bg-[#FFE7D2] rounded-full" />
@@ -178,25 +171,28 @@ export default function ProfilDanPotensiDesa() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             
             {/* Left Column: Card with Image Carousel */}
-            <div className="lg:col-span-5 relative group">
+            <div
+              data-aos="fade-right"
+              className="lg:col-span-5 relative group"
+            >
               <div className="relative w-full h-[280px] sm:h-[340px] rounded-3xl overflow-hidden shadow-2xl border-2 border-white/20">
-                <AnimatePresence mode="wait">
-                  <motion.div
-                    key={`${activeSector.id}-${currentImageIndex}`}
-                    initial={{ opacity: 0, scale: 1.05 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 0.4 }}
-                    className="absolute inset-0"
+                {activeSector.images.map((src, idx) => (
+                  <div
+                    key={idx}
+                    className="absolute inset-0 transition-all duration-500 ease-in-out"
+                    style={{
+                      opacity: currentImageIndex === idx ? 1 : 0,
+                      zIndex: currentImageIndex === idx ? 1 : 0,
+                    }}
                   >
                     <Image
-                      src={activeSector.images[currentImageIndex]}
+                      src={src}
                       alt={activeSector.title}
                       fill
                       className="object-cover object-center"
                     />
-                  </motion.div>
-                </AnimatePresence>
+                  </div>
+                ))}
 
                 {/* Carousel Navigation Controls */}
                 <button
@@ -233,30 +229,36 @@ export default function ProfilDanPotensiDesa() {
             </div>
 
             {/* Right Column: Title & Description Text Directly on Background */}
-            <div className="lg:col-span-7 space-y-4">
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={activeSector.id}
-                  initial={{ opacity: 0, y: 15 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -15 }}
-                  transition={{ duration: 0.4 }}
-                  className="space-y-4"
+            <div
+              data-aos="fade-left"
+              className="lg:col-span-7 space-y-4"
+            >
+              {potensiSectors.map((sector, idx) => (
+                <div
+                  key={sector.id}
+                  className="transition-all duration-500 ease-in-out"
+                  style={{
+                    opacity: activeSectorIndex === idx ? 1 : 0,
+                    display: activeSectorIndex === idx ? "block" : "none",
+                  }}
                 >
                   <h4 className="font-bold text-xl sm:text-2xl lg:text-3xl text-white tracking-wide uppercase leading-snug drop-shadow">
-                    {activeSector.title}
+                    {sector.title}
                   </h4>
                   
                   <p className="text-white/90 text-sm sm:text-base font-normal leading-relaxed tracking-wide uppercase drop-shadow">
-                    {activeSector.description}
+                    {sector.description}
                   </p>
-                </motion.div>
-              </AnimatePresence>
+                </div>
+              ))}
             </div>
           </div>
 
           {/* Bottom 5 Sector Cards Selector */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 pt-4">
+          <div
+            data-aos="fade-up"
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 pt-4"
+          >
             {potensiSectors.map((sector, index) => {
               const isActive = activeSectorIndex === index;
               return (

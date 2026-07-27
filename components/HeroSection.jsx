@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import { MessageSquare } from "lucide-react";
 import Image from "next/image";
 
@@ -25,10 +22,9 @@ export default function HeroSection() {
 
       {/* Hero Content Container with wide padding */}
       <div className="relative z-10 w-full px-6 sm:px-12 lg:px-16 text-white">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+        <div
+          data-aos="fade-up"
+          data-aos-duration="800"
           className="max-w-3xl space-y-5"
         >
           {/* Plain Text Location Sub-header */}
@@ -37,7 +33,7 @@ export default function HeroSection() {
           </h3>
 
           {/* Main Serif Headline */}
-          <h1 className="font-serif font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight text-white drop-shadow-lg leading-tight">
+          <h1 className="font-inter font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight text-white drop-shadow-lg leading-tight">
             Desa Jadikarya
           </h1>
 
@@ -64,7 +60,7 @@ export default function HeroSection() {
               Lihat Peta Potensi
             </a>
           </div>
-        </motion.div>
+        </div>
       </div>
 
       {/* Floating Green WhatsApp Button (Bottom Right) */}
