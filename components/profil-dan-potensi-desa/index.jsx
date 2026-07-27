@@ -1,78 +1,66 @@
 "use client";
 
-import { useState } from "react";
-import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { useState, useCallback } from "react";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import PotensiCarousel from "./potensi-carousel";
+
+const potensiSectors = [
+  {
+    id: "pertanian",
+    title: "SEKTOR PERTANIAN DAN PERKEBUNAN KOMODITAS",
+    description:
+      "DIDUKUNG TANAH YANG SUBUR, DESA JADIKARYA MENGHASILKAN BERBAGAI KOMODITAS UNGGULAN SEPERTI JAGUNG, KAPULAGA, DURIAN, ALPUKAT, MANGGIS, DAN LADA YANG MENJADI PENOPANG PEREKONOMIAN MASYARAKAT.",
+    images: ["/assets/sawah.jpg", "/assets/hero.png", "/assets/potensi_wisata.png"],
+    thumbLabel: "Sektor Pertanian dan Perkebunan Komoditas",
+    thumbImg: "/assets/sawah.jpg",
+  },
+  {
+    id: "kehutanan",
+    title: "SEKTOR KEHUTANAN RAKYAT DAN AGROFORESTRI",
+    description:
+      "PENGELOLAAN HUTAN RAKYAT BERKELANJUTAN DAN SISTEM AGROFORESTRI DENGAN TANAMAN KAYU SERTA HASIL HUTAN BUKAN KAYU UNTUK KESEJAHTERAAN LINGKUNGAN MASYARAKAT.",
+    images: ["/assets/potensi_wisata.png", "/assets/sawah.jpg", "/assets/hero.png"],
+    thumbLabel: "Sektor Kehutanan Rakyat dan Agroforestri",
+    thumbImg: "/assets/potensi_wisata.png",
+  },
+  {
+    id: "wisata",
+    title: "SEKTOR POTENSI WISATA ALAM DAN JASA LINGKUNGAN",
+    description:
+      "KEINDAHAN SUNGAI ALAM DAN PERBUKITAN HIJAU LANGKAPLANCAR POTENSIAL DIKEMBANGKAN MENJADI DESTINASI WISATA ARUNG JERAM DAN DESA WISATA BERKELANJUTAN.",
+    images: ["/assets/potensi_wisata.png", "/assets/hero.png", "/assets/sawah.jpg"],
+    thumbLabel: "Sektor Potensi Wisata Alam dan Jasa Lingkungan",
+    thumbImg: "/assets/potensi_wisata.png",
+  },
+  {
+    id: "peternakan",
+    title: "SEKTOR PETERNAKAN",
+    description:
+      "PEMELIHARAAN TERNAK SAPI, KAMBING, DAN BUDIDAYA IKAN AIR TAWAR YANG DIKELOLA OLEH KELOMPOK TANI DAN PEMUDA DESA UNTUK KETAHANAN PANGAN LOKAL.",
+    images: ["/assets/hero.png", "/assets/sawah.jpg", "/assets/potensi_wisata.png"],
+    thumbLabel: "Sektor Peternakan",
+    thumbImg: "/assets/hero.png",
+  },
+  {
+    id: "ekonomi",
+    title: "SEKTOR EKONOMI LOKAL DAN KELEMBAGAAN DESA",
+    description:
+      "PERAN BUMDES DAN UMKM DESA DALAM MENDISTRIBUSIKAN HASIL BUMI SERTA MEMAJUKAN KESEJAHTERAAN MASYARAKAT SECARA MANDIRI DAN INKLUSIF.",
+    images: ["/assets/hero.png", "/assets/potensi_wisata.png", "/assets/sawah.jpg"],
+    thumbLabel: "Sektor Ekonomi Lokal dan Kelembagaan Desa",
+    thumbImg: "/assets/ipang.png",
+  },
+];
 
 export default function ProfilDanPotensiDesa() {
-  // 5 Sektor Potensi Desa
-  const potensiSectors = [
-    {
-      id: "pertanian",
-      title: "SEKTOR PERTANIAN DAN PERKEBUNAN KOMODITAS",
-      description:
-        "DIDUKUNG TANAH YANG SUBUR, DESA JADIKARYA MENGHASILKAN BERBAGAI KOMODITAS UNGGULAN SEPERTI JAGUNG, KAPULAGA, DURIAN, ALPUKAT, MANGGIS, DAN LADA YANG MENJADI PENOPANG PEREKONOMIAN MASYARAKAT.",
-      images: ["/assets/sawah.jpg", "/assets/hero.png", "/assets/potensi_wisata.png"],
-      thumbLabel: "Sektor Pertanian dan Perkebunan Komoditas",
-      thumbImg: "/assets/sawah.jpg",
-    },
-    {
-      id: "kehutanan",
-      title: "SEKTOR KEHUTANAN RAKYAT DAN AGROFORESTRI",
-      description:
-        "PENGELOLAAN HUTAN RAKYAT BERKELANJUTAN DAN SISTEM AGROFORESTRI DENGAN TANAMAN KAYU SERTA HASIL HUTAN BUKAN KAYU UNTUK KESEJAHTERAAN LINGKUNGAN MASYARAKAT.",
-      images: ["/assets/potensi_wisata.png", "/assets/sawah.jpg", "/assets/hero.png"],
-      thumbLabel: "Sektor Kehutanan Rakyat dan Agroforestri",
-      thumbImg: "/assets/potensi_wisata.png",
-    },
-    {
-      id: "wisata",
-      title: "SEKTOR POTENSI WISATA ALAM DAN JASA LINGKUNGAN",
-      description:
-        "KEINDAHAN SUNGAI ALAM DAN PERBUKITAN HIJAU LANGKAPLANCAR POTENSIAL DIKEMBANGKAN MENJADI DESTINASI WISATA ARUNG JERAM DAN DESA WISATA BERKELANJUTAN.",
-      images: ["/assets/potensi_wisata.png", "/assets/hero.png", "/assets/sawah.jpg"],
-      thumbLabel: "Sektor Potensi Wisata Alam dan Jasa Lingkungan",
-      thumbImg: "/assets/potensi_wisata.png",
-    },
-    {
-      id: "peternakan",
-      title: "SEKTOR PETERNAKAN",
-      description:
-        "PEMELIHARAAN TERNAK SAPI, KAMBING, DAN BUDIDAYA IKAN AIR TAWAR YANG DIKELOLA OLEH KELOMPOK TANI DAN PEMUDA DESA UNTUK KETAHANAN PANGAN LOKAL.",
-      images: ["/assets/hero.png", "/assets/sawah.jpg", "/assets/potensi_wisata.png"],
-      thumbLabel: "Sektor Peternakan",
-      thumbImg: "/assets/hero.png",
-    },
-    {
-      id: "ekonomi",
-      title: "SEKTOR EKONOMI LOKAL DAN KELEMBAGAAN DESA",
-      description:
-        "PERAN BUMDES DAN UMKM DESA DALAM MENDISTRIBUSIKAN HASIL BUMI SERTA MEMAJUKAN KESEJAHTERAAN MASYARAKAT SECARA MANDIRI DAN INKLUSIF.",
-      images: ["/assets/hero.png", "/assets/potensi_wisata.png", "/assets/sawah.jpg"],
-      thumbLabel: "Sektor Ekonomi Lokal dan Kelembagaan Desa",
-      thumbImg: "/assets/ipang.png",
-    },
-  ];
-
   const [activeSectorIndex, setActiveSectorIndex] = useState(0);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const activeSector = potensiSectors[activeSectorIndex];
 
-  const handleSectorChange = (index) => {
+  const handleSectorChange = useCallback((index) => {
     setActiveSectorIndex(index);
-    setCurrentImageIndex(0); // Reset carousel image index to first photo
-  };
-
-  const handleNextImage = () => {
-    setCurrentImageIndex((prev) => (prev + 1) % activeSector.images.length);
-  };
-
-  const handlePrevImage = () => {
-    setCurrentImageIndex((prev) =>
-      prev === 0 ? activeSector.images.length - 1 : prev - 1
-    );
-  };
+  }, []);
 
   return (
     <div className="w-full">
@@ -113,6 +101,7 @@ export default function ProfilDanPotensiDesa() {
                 alt="Pemandangan Gunung dan Sawah Desa Jadikarya"
                 fill
                 priority
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover object-center hover:scale-105 transition-transform duration-700"
               />
             </div>
@@ -123,7 +112,7 @@ export default function ProfilDanPotensiDesa() {
       {/* ================= SECTION 4: POTENSI DESA WITH DYNAMIC BACKGROUND & LINEAR GRADIENT ================= */}
       <section id="potensi-desa" className="relative w-full py-16 sm:py-24 text-white overflow-hidden bg-[#0A4532]">
         
-        {/* Dynamic Background Image changing with active card photo */}
+        {/* Dynamic Background Image changing with active sector */}
         <div className="absolute inset-0 z-0">
           {potensiSectors.map((sector, idx) => (
             <div
@@ -132,10 +121,11 @@ export default function ProfilDanPotensiDesa() {
               style={{ opacity: activeSectorIndex === idx ? 1 : 0 }}
             >
               <Image
-                src={sector.images[currentImageIndex]}
+                src={sector.images[0]}
                 alt={sector.title}
                 fill
                 className="object-cover object-center"
+                sizes="100vw"
               />
             </div>
           ))}
@@ -173,59 +163,12 @@ export default function ProfilDanPotensiDesa() {
             {/* Left Column: Card with Image Carousel */}
             <div
               data-aos="fade-right"
-              className="lg:col-span-5 relative group"
+              className="lg:col-span-5"
             >
-              <div className="relative w-full h-[280px] sm:h-[340px] rounded-3xl overflow-hidden shadow-2xl border-2 border-white/20">
-                {activeSector.images.map((src, idx) => (
-                  <div
-                    key={idx}
-                    className="absolute inset-0 transition-all duration-500 ease-in-out"
-                    style={{
-                      opacity: currentImageIndex === idx ? 1 : 0,
-                      zIndex: currentImageIndex === idx ? 1 : 0,
-                    }}
-                  >
-                    <Image
-                      src={src}
-                      alt={activeSector.title}
-                      fill
-                      className="object-cover object-center"
-                    />
-                  </div>
-                ))}
-
-                {/* Carousel Navigation Controls */}
-                <button
-                  onClick={handlePrevImage}
-                  className="absolute left-3 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/40 hover:bg-black/70 backdrop-blur-md text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
-                  aria-label="Previous Image"
-                >
-                  <ChevronLeft size={20} />
-                </button>
-                <button
-                  onClick={handleNextImage}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/40 hover:bg-black/70 backdrop-blur-md text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
-                  aria-label="Next Image"
-                >
-                  <ChevronRight size={20} />
-                </button>
-
-                {/* Dot Indicators at Bottom Center of Card */}
-                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2 z-10 px-3 py-1.5 rounded-full bg-black/40 backdrop-blur-md border border-white/10">
-                  {activeSector.images.map((_, idx) => (
-                    <button
-                      key={idx}
-                      onClick={() => setCurrentImageIndex(idx)}
-                      className={`w-2.5 h-2.5 rounded-full transition-all ${
-                        currentImageIndex === idx
-                          ? "bg-white scale-125"
-                          : "bg-white/50 hover:bg-white/80"
-                      }`}
-                      aria-label={`Go to slide ${idx + 1}`}
-                    />
-                  ))}
-                </div>
-              </div>
+              <PotensiCarousel
+                images={activeSector.images}
+                alt={activeSector.title}
+              />
             </div>
 
             {/* Right Column: Title & Description Text Directly on Background */}
@@ -277,6 +220,7 @@ export default function ProfilDanPotensiDesa() {
                       src={sector.thumbImg}
                       alt={sector.thumbLabel}
                       fill
+                      sizes="48px"
                       className="object-cover"
                     />
                   </div>
