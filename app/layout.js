@@ -1,5 +1,5 @@
 import "./globals.css";
-import AOSInit from "@/components/AOSInit";
+import AOSInit from "@/components/aos-init";
 
 export const metadata = {
   title: "Desa Jadikarya - Kecamatan Langkaplancar, Kabupaten Pangandaran",

@@ -1,0 +1,111 @@
+export const strukturDesa = {
+  top: {
+    id: "kadis",
+    jabatan: "Kepala Desa",
+    nama: "Maulana Syahputra",
+    inisial: "MS",
+    foto: "",
+  },
+  sekretaris: {
+    id: "sekdes",
+    jabatan: "Sekretaris Desa",
+    nama: "Siti Rahayu",
+    inisial: "SR",
+    foto: "",
+  },
+  kaur: [
+    {
+      id: "kaur-tu",
+      jabatan: "Kaur Tata Usaha & Umum",
+      nama: "Ahmad Fauzi",
+      inisial: "AF",
+      foto: "",
+    },
+    {
+      id: "kaur-keu",
+      jabatan: "Kaur Keuangan",
+      nama: "Dewi Lestari",
+      inisial: "DL",
+      foto: "",
+    },
+    {
+      id: "kaur-ren",
+      jabatan: "Kaur Perencanaan",
+      nama: "Rizky Pratama",
+      inisial: "RP",
+      foto: "",
+    },
+  ],
+  kasi: [
+    {
+      id: "kasi-pem",
+      jabatan: "Kasi Pemerintahan",
+      nama: "Hendra Wijaya",
+      inisial: "HW",
+      foto: "",
+    },
+    {
+      id: "kasi-kes",
+      jabatan: "Kasi Kesejahteraan",
+      nama: "Nur Aini",
+      inisial: "NA",
+      foto: "",
+    },
+  ],
+  kadus: [
+    {
+      id: "kadus-1",
+      jabatan: "Kepala Dusun I",
+      nama: "Suherman",
+      inisial: "SH",
+      foto: "",
+    },
+    {
+      id: "kadus-2",
+      jabatan: "Kepala Dusun II",
+      nama: "Agus Salim",
+      inisial: "AS",
+      foto: "",
+    },
+    {
+      id: "kadus-3",
+      jabatan: "Kepala Dusun III",
+      nama: "Surya Darma",
+      inisial: "SD",
+      foto: "",
+    },
+  ],
+};
+
+export const grupTema = {
+  kaur: {
+    label: "Kepala Urusan (Kaur)",
+    sub: "Unsur Sekretariat",
+    badge: "bg-sky-50 text-sky-700 border-sky-200",
+    bar: "from-sky-500 via-sky-400 to-cyan-400",
+    border: "border-sky-200/80",
+    bg: "from-sky-50/60 to-white",
+    text: "text-sky-700",
+    shadow: "shadow-sky-200/60",
+  },
+  kasi: {
+    label: "Kepala Seksi (Kasi)",
+    sub: "Unsur Pelaksana Teknis",
+    badge: "bg-emerald-50 text-emerald-700 border-emerald-200",
+    bar: "from-emerald-500 via-emerald-400 to-teal-400",
+    border: "border-emerald-200/80",
+    bg: "from-emerald-50/60 to-white",
+    text: "text-emerald-700",
+    shadow: "shadow-emerald-200/60",
+  },
+  kadus: {
+    label: "Kepala Dusun (Kadus)",
+    sub: "Unsur Kewilayahan",
+    badge: "bg-amber-50 text-amber-700 border-amber-200",
+    bar: "from-amber-500 via-amber-400 to-orange-400",
+    border: "border-amber-200/80",
+    bg: "from-amber-50/60 to-white",
+    text: "text-amber-700",
+    shadow: "shadow-amber-200/60",
+  },
+};

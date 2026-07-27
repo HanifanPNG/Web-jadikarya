@@ -1,6 +1,6 @@
-import Navbar from "@/components/Navbar";
-import ProfilDesaPage from "@/components/ProfilDesaPage";
-import PemerintahDanKontak from "@/components/PemerintahDanKontak";
+import Navbar from "@/components/navbar";
+import ProfilDesaPage from "@/components/profil-desa";
+import PemerintahDanKontak from "@/components/pemerintah-dan-kontak";
 
 export const metadata = {
   title: "Profil Desa Jadikarya - Langkaplancar, Pangandaran",

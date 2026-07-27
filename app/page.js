@@ -1,9 +1,9 @@
-import Navbar from "@/components/Navbar";
-import HeroSection from "@/components/HeroSection";
-import SambutanKepalaDesa from "@/components/SambutanKepalaDesa";
-import ProfilDanPotensiDesa from "@/components/ProfilDanPotensiDesa";
-import AgendaRutinan from "@/components/AgendaRutinan";
-import PemerintahDanKontak from "@/components/PemerintahDanKontak";
+import Navbar from "@/components/navbar";
+import HeroSection from "@/components/hero-section";
+import SambutanKepalaDesa from "@/components/sambutan-kepala-desa";
+import ProfilDanPotensiDesa from "@/components/profil-dan-potensi-desa";
+import AgendaRutinan from "@/components/agenda-rutinan";
+import PemerintahDanKontak from "@/components/pemerintah-dan-kontak";
 
 export default function Home() {
   return (
