@@ -47,16 +47,8 @@ export default function AgendaRutinan() {
 
   return (
     <section id="agenda" className="relative py-16 sm:py-24 bg-gradient-to-b from-white to-[#F4F7F5] text-slate-800 overflow-hidden">
-      {/* Subtle decorative background pattern */}
-      <div className="absolute inset-0 opacity-40 pointer-events-none select-none">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: `radial-gradient(circle at 1px 1px, rgba(4, 47, 30, 0.08) 1px, transparent 0)`,
-            backgroundSize: "40px 40px",
-          }}
-        />
-      </div>
+      {/* Subtle decorative grid background pattern */}
+      <div className="absolute inset-0 bg-village-grid-light opacity-85 pointer-events-none select-none" />
 
       {/* Soft blurred decorative accents for depth and color interest */}
       <div className="absolute top-0 right-0 w-80 h-80 bg-[#0A4532]/5 rounded-full blur-[100px] translate-x-1/3 -translate-y-1/3 pointer-events-none select-none" />

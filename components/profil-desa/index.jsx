@@ -107,6 +107,8 @@ export default function ProfilDesaPage() {
       ══════════════════════════════════════════════════ */}
       <div className="relative">
         <div className="fixed inset-0 -z-10 bg-gradient-to-br from-[#F8FAF8] via-white to-[#E8F0EC]" />
+        {/* Subtle decorative grid background overlay */}
+        <div className="absolute inset-0 -z-10 bg-village-grid-light opacity-75 pointer-events-none select-none" />
 
         <div className="max-w-6xl mx-auto px-6 sm:px-10 lg:px-16 py-16 space-y-10 sm:space-y-12">
 

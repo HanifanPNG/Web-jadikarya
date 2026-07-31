@@ -29,8 +29,10 @@ export default function PemerintahDanKontak() {
   ];
 
   return (
-    <footer id="pemerintah-kontak" className="w-full bg-[#0A4532] text-white pt-16 pb-8 border-t-4 border-emerald-600/30 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12 space-y-12">
+    <footer id="pemerintah-kontak" className="relative w-full bg-[#0A4532] text-white pt-16 pb-8 border-t-4 border-emerald-600/30 overflow-hidden">
+      {/* Subtle dark grid background */}
+      <div className="absolute inset-0 bg-village-grid-dark opacity-25 pointer-events-none select-none" />
+      <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-10 lg:px-12 space-y-12">
         
         {/* Main Footer 4-Column Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12">

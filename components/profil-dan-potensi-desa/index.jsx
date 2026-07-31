@@ -65,8 +65,10 @@ export default function ProfilDanPotensiDesa() {
   return (
     <div className="w-full">
       {/* ================= SECTION 3: SEKILAS PROFIL DESA ================= */}
-      <section id="profil-desa" className="w-full bg-[#0A4532] text-white py-12 lg:py-16 overflow-hidden">
-        <div className="w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      <section id="profil-desa" className="relative w-full bg-[#0A4532] text-white py-12 lg:py-16 overflow-hidden">
+        {/* Subtle dark grid background */}
+        <div className="absolute inset-0 bg-village-grid-dark opacity-35 pointer-events-none select-none" />
+        <div className="relative z-10 w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           {/* Left Content (Text) */}
           <div
             data-aos="fade-right"
@@ -132,6 +134,8 @@ export default function ProfilDanPotensiDesa() {
 
           {/* Linear Gradient Overlay: Solid #0A4532 on left (opacity 100%), fading to transparent on right (opacity 0%) */}
           <div className="absolute inset-0 bg-gradient-to-r from-[#0A4532] via-[#0A4532]/75 to-transparent" />
+          {/* Subtle dark grid background */}
+          <div className="absolute inset-0 bg-village-grid-dark opacity-35 pointer-events-none select-none" />
         </div>
 
         {/* Content Container */}
