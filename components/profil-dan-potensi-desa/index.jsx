@@ -149,12 +149,12 @@ export default function ProfilDanPotensiDesa() {
               <div className="w-32 sm:w-44 h-1 bg-[#FFE7D2] rounded-full" />
             </div>
 
-            <a
-              href="#potensi-desa"
-              className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/30 backdrop-blur-md text-xs sm:text-sm text-white font-medium transition-all hover:scale-105"
-            >
-              Lihat Selengkapnya <ArrowRight size={16} />
-            </a>
+<a
+                  href="/potensi-desa"
+                  className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/30 backdrop-blur-md text-xs sm:text-sm text-white font-medium transition-all hover:scale-105"
+                >
+                  Lihat Selengkapnya <ArrowRight size={16} />
+                </a>
           </div>
 
           {/* Middle Row: Left Carousel Image Card, Right Text Content */}

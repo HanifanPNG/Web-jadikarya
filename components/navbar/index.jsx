@@ -32,7 +32,7 @@ export default function Navbar() {
   const navItems = [
     { id: "beranda", label: "Beranda", href: "/", isPage: true },
     { id: "profil", label: "Profil Desa", href: "/profil-desa", isPage: true },
-    { id: "potensi", label: "Potensi Desa", href: "/#potensi-desa", isPage: false },
+    { id: "potensi", label: "Potensi Desa", href: "/potensi-desa", isPage: true },,
     { id: "peta", label: "Peta Potensi", href: "/#peta-potensi", isPage: false },
     { id: "kontak", label: "Kontak", href: "/#pemerintah-kontak", isPage: false },
   ];
