@@ -31,8 +31,12 @@ export default function PotensiDesaPage() {
             alt={`Pemandangan ${activeSector.title}`}
             fill
             priority
+            sizes="(max-width: 768px) 150vw, 100vw"
+            quality={90}
             className="object-cover object-center"
           />
+          {/* Dark overlay with low opacity to dim the background image */}
+          <div className="absolute inset-0 bg-[#041a12]/60" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/20" />
         </div>
 
