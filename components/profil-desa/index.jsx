@@ -47,7 +47,7 @@ export default function ProfilDesaPage() {
                 data-aos="fade-up"
                 className="font-inter font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight text-white drop-shadow-lg leading-tight mb-4"
               >
-                Profil <br /> Desa Jadikarya
+                Profil <br /> Desa <span className="text-yellow-500">Jadikarya</span>
               </h1>
               <p
                 data-aos="fade-up"
@@ -67,25 +67,23 @@ export default function ProfilDesaPage() {
               className="lg:max-h-[calc(100vh-10rem)] lg:overflow-y-auto space-y-4 lg:pr-1 scrollbar-note"
             >
               {tentangDesa.cards.map((card, i) => {
-                const Icon = card.icon;
-                const num = String(i + 1).padStart(2, "0");
                 return (
                   <div
                     key={i}
                     className="relative rounded-xl border border-white/20 bg-white/15 backdrop-blur-lg p-5 sm:p-6 shadow-lg shadow-black/10 overflow-hidden"
                   >
-                    <span className="absolute top-2 right-3 font-inter font-black text-5xl sm:text-6xl text-white/5 select-none leading-none">
-                      {num}
-                    </span>
                     <div className="flex items-start gap-3 mb-3 relative z-10">
-                      <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-white/20 text-white flex items-center justify-center backdrop-blur-sm">
-                        <Icon size={20} />
-                      </div>
                       <h3 className="font-inter font-bold text-sm sm:text-base text-white pt-1.5 drop-shadow-sm">
                         {card.label}
                       </h3>
                     </div>
-                    <ul className="space-y-1.5 relative z-10">
+                    <ul
+                      className={`relative z-10 ${
+                        i === 0
+                          ? "grid grid-cols-2 gap-x-4 gap-y-1.5"
+                          : "space-y-1.5"
+                      }`}
+                    >
                       {card.items.map((item, j) => (
                         <li key={j} className="flex items-start gap-2 text-white/80 text-xs sm:text-sm">
                           <span className="w-1.5 h-1.5 rounded-full bg-white/40 flex-shrink-0 mt-1.5" />
@@ -108,7 +106,7 @@ export default function ProfilDesaPage() {
       <div className="relative">
         <div className="fixed inset-0 -z-10 bg-gradient-to-br from-[#F8FAF8] via-white to-[#E8F0EC]" />
         {/* Subtle decorative grid background overlay */}
-        <div className="absolute inset-0 -z-10 bg-village-grid-light opacity-75 pointer-events-none select-none" />
+        <div className="absolute inset-0 bg-village-grid-light opacity-85 pointer-events-none select-none" />
 
         <div className="max-w-6xl mx-auto px-6 sm:px-10 lg:px-16 py-16 space-y-10 sm:space-y-12">
 
@@ -118,7 +116,7 @@ export default function ProfilDesaPage() {
           <section id="visi-misi">
             <SectionShell>
               <div data-aos="fade-up" className="text-center space-y-2 mb-12">
-                <h2 className="font-inter font-bold text-2xl sm:text-3xl md:text-4xl text-[#0A4532] tracking-widest uppercase">
+                <h2 className="font-inter font-bold text-2xl sm:text-3xl text-[#0A4532] tracking-widest uppercase">
                   Visi &amp; Misi Desa
                 </h2>
                 <div className="w-24 sm:w-32 h-1 bg-[#0A4532] mx-auto rounded-full" />
@@ -183,8 +181,8 @@ export default function ProfilDesaPage() {
                 data-aos="fade-up"
                 className="text-center space-y-2 mb-8"
               >
-                <h2 className="font-inter font-bold text-2xl sm:text-3xl md:text-4xl text-[#0A4532] tracking-widest uppercase">
-                  Struktur Perangkat Desa
+                <h2 className="font-inter font-bold text-2xl sm:text-3xl text-[#0A4532] tracking-widest uppercase">
+                  Struktur Organisasi Pemerintahan Desa Jadikarya Kecamatan Langkaplancar Kabupaten Pangandaran
                 </h2>
                 <div className="w-24 sm:w-32 h-1 bg-[#0A4532] mx-auto rounded-full" />
               </div>
@@ -226,60 +224,33 @@ export default function ProfilDesaPage() {
 
                     {/* Group Kaur */}
                     <div className="w-full">
-                      <GroupCard tema={grupTema.kaur}>
-                        {strukturDesa.kaur.map((item) => (
-                          <PersonCard
-                            key={item.id || item.jabatan}
-                            jabatan={item.jabatan}
-                            nama={item.nama}
-                            inisial={item.inisial}
-                            foto={item.foto}
-                            variant="default"
-                            accent={grupTema.kaur.bar}
-                            www="max-w-full"
-                          />
-                        ))}
-                      </GroupCard>
+                      <GroupCard
+                        tema={grupTema.kaur}
+                        items={strukturDesa.kaur}
+                        accent={grupTema.kaur.bar}
+                      />
                     </div>
 
                     <div className="h-6 w-px bg-gradient-to-b from-emerald-300/60 to-transparent" />
 
                     {/* Group Kasi */}
                     <div className="w-full">
-                      <GroupCard tema={grupTema.kasi}>
-                        {strukturDesa.kasi.map((item) => (
-                          <PersonCard
-                            key={item.id || item.jabatan}
-                            jabatan={item.jabatan}
-                            nama={item.nama}
-                            inisial={item.inisial}
-                            foto={item.foto}
-                            variant="default"
-                            accent={grupTema.kasi.bar}
-                            www="max-w-full"
-                          />
-                        ))}
-                      </GroupCard>
+                      <GroupCard
+                        tema={grupTema.kasi}
+                        items={strukturDesa.kasi}
+                        accent={grupTema.kasi.bar}
+                      />
                     </div>
 
                     <div className="h-6 w-px bg-gradient-to-b from-amber-300/60 to-transparent" />
 
                     {/* Group Kadus */}
                     <div className="w-full">
-                      <GroupCard tema={grupTema.kadus}>
-                        {strukturDesa.kadus.map((item) => (
-                          <PersonCard
-                            key={item.id || item.jabatan}
-                            jabatan={item.jabatan}
-                            nama={item.nama}
-                            inisial={item.inisial}
-                            foto={item.foto}
-                            variant="default"
-                            accent={grupTema.kadus.bar}
-                            www="max-w-full"
-                          />
-                        ))}
-                      </GroupCard>
+                      <GroupCard
+                        tema={grupTema.kadus}
+                        items={strukturDesa.kadus}
+                        accent={grupTema.kadus.bar}
+                      />
                     </div>
                   </div>
                 </div>
@@ -293,7 +264,7 @@ export default function ProfilDesaPage() {
           <section id="lembaga-desa">
             <SectionShell>
               <div data-aos="fade-up" className="text-center space-y-2 mb-12">
-                <h2 className="font-inter font-bold text-2xl sm:text-3xl md:text-4xl text-[#0A4532] tracking-widest uppercase">
+                <h2 className="font-inter font-bold text-2xl sm:text-3xl text-[#0A4532] tracking-widest uppercase">
                   Lembaga Desa
                 </h2>
                 <div className="w-24 sm:w-32 h-1 bg-[#0A4532] mx-auto rounded-full" />
@@ -357,7 +328,7 @@ export default function ProfilDesaPage() {
           <section id="statistik-desa">
             <SectionShell>
               <div data-aos="fade-up" className="text-center space-y-2 mb-12">
-                <h2 className="font-inter font-bold text-2xl sm:text-3xl md:text-4xl text-[#0A4532] tracking-widest uppercase">
+                <h2 className="font-inter font-bold text-2xl sm:text-3xl text-[#0A4532] tracking-widest uppercase">
                   Statistik Desa
                 </h2>
                 <div className="w-24 sm:w-32 h-1 bg-[#0A4532] mx-auto rounded-full" />

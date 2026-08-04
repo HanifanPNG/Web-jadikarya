@@ -38,7 +38,7 @@ export default function HeroSection() {
 
           {/* Main Serif Headline */}
           <h1 className="font-inter font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight text-white drop-shadow-lg leading-tight">
-            Desa Jadikarya
+            Desa <span className="text-yellow-500">Jadikarya</span>
           </h1>
 
           {/* Description Text matching Screenshot */}

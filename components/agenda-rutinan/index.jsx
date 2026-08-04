@@ -58,7 +58,7 @@ export default function AgendaRutinan() {
         
         {/* Centered Header Title */}
         <div className="text-center space-y-2" data-aos="fade-up">
-          <h2 className="font-inter font-bold text-2xl sm:text-3xl md:text-4xl text-[#0A4532] tracking-widest uppercase">
+          <h2 className="font-inter font-bold text-2xl sm:text-3xl text-[#0A4532] tracking-widest uppercase">
             AGENDA RUTINAN DESA
           </h2>
           <div className="w-24 sm:w-32 h-1 bg-[#0A4532] mx-auto rounded-full" />

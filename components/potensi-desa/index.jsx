@@ -48,7 +48,7 @@ export default function PotensiDesaPage() {
               data-aos="fade-up"
               className="font-inter font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight text-white drop-shadow-lg leading-tight mb-4"
             >
-              POTENSI DESA
+              Potensi <br /> Desa <span className="text-yellow-500">Jadikarya</span>
             </h1>
             <p
               data-aos="fade-up"

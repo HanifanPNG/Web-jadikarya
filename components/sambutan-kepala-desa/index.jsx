@@ -24,7 +24,7 @@ export default function App() {
           className="text-center mb-14 sm:mb-16"
         >
             <div className="flex flex-col items-center space-y-1">
-              <h3 className="font-inter text-2xl sm:text-3xl md:text-4xl font-bold tracking-widest text-[#042F1E] uppercase">
+              <h3 className="font-inter text-2xl sm:text-3xl font-bold tracking-widest text-[#042F1E] uppercase">
                 SAMBUTAN KEPALA DESA
               </h3>
               <div className="w-32 sm:w-44 h-1 bg-[#042F1E] rounded-full" />
@@ -60,7 +60,7 @@ export default function App() {
 
             <div className="mt-6 space-y-1.5">
               <h4 className="font-inter font-bold text-[#042F1E] text-xl sm:text-2xl tracking-wide">
-                Bapak Maulana Syahputra
+                Drs. Dadang Supratna, M.Pd
               </h4>
               <p className="text-slate-500 font-semibold text-sm sm:text-base tracking-widest uppercase">
                 Kepala Desa Jadikarya

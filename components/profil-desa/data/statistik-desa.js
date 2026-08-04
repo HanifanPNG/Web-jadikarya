@@ -1,16 +1,16 @@
-import { Users, MapPin, Home, TreePine } from "lucide-react";
+import { Users, MapPin, Home, IdCard } from "lucide-react";
 
 export const statistikDesa = [
   {
     label: "Total Penduduk",
-    value: "3.247",
+    value: "2780",
     satuan: "Jiwa",
     icon: Users,
     desc: "Penduduk terdaftar",
   },
   {
     label: "Jumlah Dusun",
-    value: "3",
+    value: "5",
     satuan: "Dusun",
     icon: MapPin,
     desc: "Wilayah administratif",
@@ -23,10 +23,10 @@ export const statistikDesa = [
     desc: "Unit lingkungan",
   },
   {
-    label: "Luas Wilayah",
-    value: "1.842",
-    satuan: "Hektar",
-    icon: TreePine,
-    desc: "Luas total wilayah",
+    label: "Kartu Keluarga",
+    value: "970",
+    satuan: "KK",
+    icon: IdCard,
+    desc: "Jumlah kartu keluarga",
   },
 ];

@@ -113,7 +113,7 @@ export default function ProfilDanPotensiDesa() {
 
       {/* ================= SECTION 4: POTENSI DESA WITH DYNAMIC BACKGROUND & LINEAR GRADIENT ================= */}
       <section id="potensi-desa" className="relative w-full py-16 sm:py-24 text-white overflow-hidden bg-[#0A4532]">
-        
+
         {/* Dynamic Background Image changing with active sector */}
         <div className="absolute inset-0 z-0">
           {potensiSectors.map((sector, idx) => (
@@ -140,30 +140,27 @@ export default function ProfilDanPotensiDesa() {
 
         {/* Content Container */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-          
+
           {/* Header Row: Title Left, CTA Right */}
           <div
             data-aos="fade-up"
             className="flex items-center justify-between gap-4"
           >
-            <div className="space-y-1">
-              <h3 className="font-inter text-2xl sm:text-3xl md:text-4xl font-bold tracking-widest text-[#FFE7D2] uppercase">
-                POTENSI DESA
-              </h3>
-              <div className="w-32 sm:w-44 h-1 bg-[#FFE7D2] rounded-full" />
+            <div className="inline-flex items-center gap-3 text-[#FFE7D2] font-semibold text-sm sm:text-base tracking-widest uppercase">
+              <span>SEKILAS POTENSI DESA</span>
             </div>
 
-<a
-                  href="/potensi-desa"
-                  className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/30 backdrop-blur-md text-xs sm:text-sm text-white font-medium transition-all hover:scale-105"
-                >
-                  Lihat Selengkapnya <ArrowRight size={16} />
-                </a>
+            <a
+              href="/potensi-desa"
+              className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/30 backdrop-blur-md text-xs sm:text-sm text-white font-medium transition-all hover:scale-105"
+            >
+              Lihat Selengkapnya <ArrowRight size={16} />
+            </a>
           </div>
 
           {/* Middle Row: Left Carousel Image Card, Right Text Content */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-            
+
             {/* Left Column: Card with Image Carousel */}
             <div
               data-aos="fade-right"
@@ -192,7 +189,7 @@ export default function ProfilDanPotensiDesa() {
                   <h4 className="font-bold text-xl sm:text-2xl lg:text-3xl text-white tracking-wide uppercase leading-snug drop-shadow">
                     {sector.title}
                   </h4>
-                  
+
                   <p className="text-white/90 text-sm sm:text-base font-normal leading-relaxed tracking-wide uppercase drop-shadow">
                     {sector.description}
                   </p>
@@ -212,11 +209,10 @@ export default function ProfilDanPotensiDesa() {
                 <button
                   key={sector.id}
                   onClick={() => handleSectorChange(index)}
-                  className={`p-3.5 rounded-2xl text-left transition-all duration-300 flex items-center gap-3 bg-white text-slate-900 shadow-xl border-2 ${
-                    isActive
+                  className={`p-3.5 rounded-2xl text-left transition-all duration-300 flex items-center gap-3 bg-white text-slate-900 shadow-xl border-2 ${isActive
                       ? "ring-4 ring-[#FFE7D2] border-[#0A4532] scale-[1.03]"
                       : "border-transparent opacity-95 hover:opacity-100 hover:scale-[1.01]"
-                  }`}
+                    }`}
                 >
                   {/* Thumbnail Image */}
                   <div className="relative w-12 h-12 rounded-full overflow-hidden flex-shrink-0 border-2 border-[#0A4532]">

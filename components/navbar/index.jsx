@@ -13,6 +13,8 @@ export default function Navbar() {
 
   useEffect(() => {
     if (pathname === "/profil-desa") setActiveNav("profil");
+    else if (pathname === "/potensi-desa") setActiveNav("potensi");
+    else if (pathname === "/peta-potensi") setActiveNav("peta");
     else if (pathname === "/") setActiveNav("beranda");
     else setActiveNav("");
   }, [pathname]);
@@ -32,9 +34,8 @@ export default function Navbar() {
   const navItems = [
     { id: "beranda", label: "Beranda", href: "/", isPage: true },
     { id: "profil", label: "Profil Desa", href: "/profil-desa", isPage: true },
-    { id: "potensi", label: "Potensi Desa", href: "/potensi-desa", isPage: true },,
-    { id: "peta", label: "Peta Potensi", href: "/#peta-potensi", isPage: false },
-    { id: "kontak", label: "Kontak", href: "/#pemerintah-kontak", isPage: false },
+    { id: "potensi", label: "Potensi Desa", href: "/potensi-desa", isPage: true },
+    { id: "peta", label: "Peta Potensi", href: "/peta-potensi", isPage: true },
   ];
 
   return (

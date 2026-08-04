@@ -6,11 +6,13 @@ export const tentangDesa = {
   cards: [
     {
       icon: Leaf,
-      label: "Potensi Alam & Komoditas",
+      label: "Dusun di Desa Jadikarya",
       items: [
-        "Gula Aren & Gula Kelapa — produk unggulan sepanjang tahun",
-        "Durian, Manggis, Alpukat — buah musiman bernilai tinggi",
-        "Kapulaga, Lada, Jagung — komoditas perkebunan utama",
+        "Dusun Jajaway",
+        "Dusun Karangpucung",
+        "Dusun Lebakjero",
+        "Dusun Ciparingga",
+        "Dusun Jadiharja"
       ],
     },
     {
@@ -26,10 +28,10 @@ export const tentangDesa = {
       icon: Compass,
       label: "Batas Wilayah",
       items: [
-        "Utara: Desa Mekarwangi",
-        "Selatan: Kecamatan Cigugur",
+        "Utara: Desa Bojong, Langkaplancar",
+        "Selatan: Kecamatan Cigugur/area hutan selatan Langkaplancar.",
         "Barat: Desa Pangkalan",
-        "Timur: Desa Cisarua",
+        "Timur:  Desa Bangunkarya, Desa Cimanggu, dan Desa Bungur Raya",
       ],
     },
     {
