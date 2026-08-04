@@ -7,7 +7,7 @@ export default function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/assets/persawahan/hero.png"
+          src="/assets/alam/alam2.webp"
           alt="Pemandangan Desa Jadikarya"
           fill
           priority
@@ -16,7 +16,7 @@ export default function HeroSection() {
           className="object-cover object-center"
         />
         {/* Dark overlay with low opacity to dim the background image */}
-        <div className="absolute inset-0 bg-[#041a12]/60" />
+        <div className="absolute inset-0 bg-[#041a12]/50" />
         {/* Top subtle dark vignette for navbar legibility */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/20" />
       </div>
