@@ -48,8 +48,8 @@ export default function App() {
               <div className="relative w-64 h-[330px] sm:w-68 sm:h-[360px] lg:w-[300px] lg:h-[400px] rounded-t-full rounded-b-3xl p-[3px] bg-gradient-to-b from-[#042F1E]/40 via-[#042F1E]/10 to-[#042F1E]/30 shadow-2xl shadow-[#042F1E]/10">
                 <div className="relative w-full h-full rounded-t-full rounded-b-[21px] overflow-hidden bg-slate-200">
                   <img
-                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="Kepala Desa Jadikarya - Bapak Maulana Syahputra"
+                    src="/assets/Foto_%20anggota_desa/Drs.DadangSupriatna,M.Pd.jpeg"
+                    alt="Kepala Desa Jadikarya - Drs. Dadang Supratna, M.Pd"
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
                   />
                   {/* Bottom gradient overlay for polish - blends with light bg */}
