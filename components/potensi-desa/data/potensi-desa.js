@@ -51,7 +51,7 @@ export const potensiDesaData = [
     id: "umkm",
     title: "UMKM Pusat Unggulan Jadikarya",
     subtitle: "Peternakan & Perikanan",
-    heroImage: "/assets/hero.png",
+    heroImage: "/assets/sawah.jpg",
     description:
       "Pemeliharaan ternak sapi, kambing, dan budidaya ikan air tawar yang dikelola oleh kelompok tani dan pemuda desa untuk ketahanan pangan lokal.",
     detailDescription:
@@ -67,7 +67,7 @@ export const potensiDesaData = [
     id: "pendidikan",
     title: "Sektor Pendidikan",
     subtitle: "Pengembangan SDM Masyarakat",
-    heroImage: "/assets/hero.png",
+    heroImage: "/assets/sawah.jpg",
     description:
       "Pengembangan sumber daya manusia melalui peningkatan akses dan mutu pendidikan di Desa Jadikarya.",
     detailDescription:
@@ -83,7 +83,7 @@ export const potensiDesaData = [
     id: "kesehatan",
     title: "Sektor Kesehatan",
     subtitle: "Layanan & Ketahanan Kesehatan",
-    heroImage: "/assets/hero.png",
+    heroImage: "/assets/sawah.jpg",
     description:
       "Peningkatan layanan kesehatan dan kesadaran hidup sehat masyarakat yang didukung oleh fasilitas posyandu dan tenaga kesehatan desa.",
     detailDescription:
@@ -99,7 +99,7 @@ export const potensiDesaData = [
     id: "layanan-publik",
     title: "Pelayanan Masyarakat",
     subtitle: "Layanan Administrasi & Publik",
-    heroImage: "/assets/hero.png",
+    heroImage: "/assets/sawah.jpg",
     description:
       "Pelayanan yang mudah, cepat, dan transparan untuk seluruh warga melalui sistem pelayanan terpadu pemerintahan desa.",
     detailDescription:

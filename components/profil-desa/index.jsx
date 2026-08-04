@@ -36,7 +36,7 @@ export default function ProfilDesaPage() {
       <section className="relative min-h-screen flex items-center pt-32 pb-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/assets/hero.png"
+            src="/assets/persawahan/hero.png"
             alt="Pemandangan Desa Jadikarya"
             fill
             priority

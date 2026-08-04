@@ -12,7 +12,7 @@ const potensiSectors = [
     title: "AGROFORESTIK",
     description:
       "DIDUKUNG TANAH YANG SUBUR, DESA JADIKARYA MENGHASILKAN BERBAGAI KOMODITAS UNGGULAN SEPERTI JAGUNG, KAPULAGA, DURIAN, ALPUKAT, MANGGIS, DAN LADA YANG MENJADI PENOPANG PEREKONOMIAN MASYARAKAT.",
-    images: ["/assets/sawah.jpg", "/assets/hero.png", "/assets/potensi_wisata.png"],
+    images: ["/assets/sawah.jpg", "/assets/sawah.jpg", "/assets/potensi_wisata.png"],
     thumbLabel: "Sektor Agroforestik",
     thumbImg: "/assets/sawah.jpg",
   },
@@ -42,9 +42,9 @@ const potensiSectors = [
     title: "UMKM PUSAT UNGGULAN JADIKARYA",
     description:
       "PEMELIHARAAN TERNAK SAPI, KAMBING, DAN BUDIDAYA IKAN AIR TAWAR YANG DIKELOLA OLEH KELOMPOK TANI DAN PEMUDA DESA UNTUK KETAHANAN PANGAN LOKAL.",
-    images: ["/assets/hero.png", "/assets/sawah.jpg", "/assets/potensi_wisata.png"],
+    images: ["/assets/sawah.jpg", "/assets/sawah.jpg", "/assets/potensi_wisata.png"],
     thumbLabel: "UMKM Pusat Unggulan Jadikarya",
-    thumbImg: "/assets/hero.png",
+    thumbImg: "/assets/sawah.jpg",
   },
   {
     id: "pendidikan",
@@ -52,9 +52,9 @@ const potensiSectors = [
     title: "SEKTOR PENDIDIKAN",
     description:
       "PERAN BUMDES DAN UMKM DESA DALAM MENDISTRIBUSIKAN HASIL BUMI SERTA MEMAJUKAN KESEJAHTERAAN MASYARAKAT SECARA MANDIRI DAN INKLUSIF.",
-    images: ["/assets/hero.png", "/assets/potensi_wisata.png", "/assets/sawah.jpg"],
+    images: ["/assets/sawah.jpg", "/assets/potensi_wisata.png", "/assets/sawah.jpg"],
     thumbLabel: "Sektor Pendidikan",
-    thumbImg: "/assets/hero.png",
+    thumbImg: "/assets/sawah.jpg",
   },
   {
     id: "kesehatan",
@@ -62,9 +62,9 @@ const potensiSectors = [
     title: "SEKTOR KESEHATAN",
     description:
       "PERAN BUMDES DAN UMKM DESA DALAM MENDISTRIBUSIKAN HASIL BUMI SERTA MEMAJUKAN KESEJAHTERAAN MASYARAKAT SECARA MANDIRI DAN INKLUSIF.",
-    images: ["/assets/hero.png", "/assets/potensi_wisata.png", "/assets/sawah.jpg"],
+    images: ["/assets/sawah.jpg", "/assets/potensi_wisata.png", "/assets/sawah.jpg"],
     thumbLabel: "Sektor Kesehatan",
-    thumbImg: "/assets/hero.png",
+    thumbImg: "/assets/sawah.jpg",
   },
   {
     id: "layanan-publik",
@@ -72,9 +72,9 @@ const potensiSectors = [
     title: "PELAYANAN MASYARAKAT",
     description:
       "PERAN BUMDES DAN UMKM DESA DALAM MENDISTRIBUSIKAN HASIL BUMI SERTA MEMAJUKAN KESEJAHTERAAN MASYARAKAT SECARA MANDIRI DAN INKLUSIF.",
-    images: ["/assets/hero.png", "/assets/potensi_wisata.png", "/assets/sawah.jpg"],
+    images: ["/assets/sawah.jpg", "/assets/potensi_wisata.png", "/assets/sawah.jpg"],
     thumbLabel: "Pelayanan Masyarakat",
-    thumbImg: "/assets/hero.png",
+    thumbImg: "/assets/sawah.jpg",
   },
 ];
 

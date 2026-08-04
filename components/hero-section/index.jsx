@@ -7,7 +7,7 @@ export default function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/assets/hero.png"
+          src="/assets/persawahan/hero.png"
           alt="Pemandangan Desa Jadikarya"
           fill
           priority
