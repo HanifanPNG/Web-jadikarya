@@ -1,6 +1,7 @@
 import { useState, useCallback } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, ArrowUpRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 function CarouselImage({ src, alt, isActive }) {
   const [hasError, setHasError] = useState(false);
@@ -31,7 +32,7 @@ function CarouselImage({ src, alt, isActive }) {
   );
 }
 
-export default function PotensiCarousel({ images, alt }) {
+export default function PotensiCarousel({ images, alt, href }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrev = useCallback(() => {
@@ -88,6 +89,20 @@ export default function PotensiCarousel({ images, alt }) {
           />
         ))}
       </div>
+
+      {href && (
+        <>
+          {/* Full overlay clickable area */}
+          <Link href={href} className="absolute inset-0 z-[5]" aria-label={`Lihat detail ${alt}`} />
+          {/* Small “Lihat Detail” pill for explicit call‑to‑action */}
+          <Link
+            href={href}
+            className="absolute bottom-4 right-4 z-10 inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#FFE7D2] text-[#0A4532] text-xs font-bold shadow-lg hover:bg-white transition-colors"
+          >
+            Lihat Detail <ArrowUpRight size={15} />
+          </Link>
+        </>
+      )}
     </div>
   );
 }

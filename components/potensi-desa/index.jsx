@@ -8,8 +8,13 @@ import { potensiDesaData } from "./data/potensi-desa";
 import SectorTabs from "./components/sector-tabs";
 import SectorDetail from "./components/sector-detail";
 
-export default function PotensiDesaPage() {
-  const [activeIndex, setActiveIndex] = useState(0);
+export default function PotensiDesaPage({ initialSector }) {
+  const initialIndex = potensiDesaData.findIndex(
+    (s) => s.id === initialSector
+  );
+  const [activeIndex, setActiveIndex] = useState(
+    initialIndex >= 0 ? initialIndex : 0
+  );
 
   const activeSector = potensiDesaData[activeIndex];
 

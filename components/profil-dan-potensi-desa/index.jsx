@@ -7,49 +7,74 @@ import PotensiCarousel from "./potensi-carousel";
 
 const potensiSectors = [
   {
-    id: "pertanian",
-    title: "SEKTOR PERTANIAN DAN PERKEBUNAN KOMODITAS",
+    id: "Agroforestik",
+    slug: "agroforest",
+    title: "AGROFORESTIK",
     description:
       "DIDUKUNG TANAH YANG SUBUR, DESA JADIKARYA MENGHASILKAN BERBAGAI KOMODITAS UNGGULAN SEPERTI JAGUNG, KAPULAGA, DURIAN, ALPUKAT, MANGGIS, DAN LADA YANG MENJADI PENOPANG PEREKONOMIAN MASYARAKAT.",
     images: ["/assets/sawah.jpg", "/assets/hero.png", "/assets/potensi_wisata.png"],
-    thumbLabel: "Sektor Pertanian dan Perkebunan Komoditas",
+    thumbLabel: "Sektor Agroforestik",
     thumbImg: "/assets/sawah.jpg",
   },
   {
-    id: "kehutanan",
-    title: "SEKTOR KEHUTANAN RAKYAT DAN AGROFORESTRI",
+    id: "Gudang buah",
+    slug: "gudang-buah",
+    title: "GUDANG BUAH (sumber rezeki)",
     description:
-      "PENGELOLAAN HUTAN RAKYAT BERKELANJUTAN DAN SISTEM AGROFORESTRI DENGAN TANAMAN KAYU SERTA HASIL HUTAN BUKAN KAYU UNTUK KESEJAHTERAAN LINGKUNGAN MASYARAKAT.",
-    images: ["/assets/potensi_wisata.png", "/assets/sawah.jpg", "/assets/hero.png"],
-    thumbLabel: "Sektor Kehutanan Rakyat dan Agroforestri",
-    thumbImg: "/assets/potensi_wisata.png",
+      "SUMBER REZEKI Gudang buah durian dan manggis ini merupakan Gudang sortir ke dalam negeri dan luar negeri",
+    images: ["/assets/gudangBuah/gudang-buah1.jpeg", "/assets/gudangBuah/gudang-buah2.jpeg", "/assets/hero.png"],
+    thumbLabel: "Gudang Buah (sumber rezeki)",
+    thumbImg: "/assets/gudangBuah/gudang-buah1.jpeg",
   },
   {
-    id: "wisata",
-    title: "SEKTOR POTENSI WISATA ALAM DAN JASA LINGKUNGAN",
+    id: "Persawahan ",
+    slug: "persawahan",
+    title: "SEKTOR PERSAWAHAN",
     description:
       "KEINDAHAN SUNGAI ALAM DAN PERBUKITAN HIJAU LANGKAPLANCAR POTENSIAL DIKEMBANGKAN MENJADI DESTINASI WISATA ARUNG JERAM DAN DESA WISATA BERKELANJUTAN.",
     images: ["/assets/potensi_wisata.png", "/assets/hero.png", "/assets/sawah.jpg"],
-    thumbLabel: "Sektor Potensi Wisata Alam dan Jasa Lingkungan",
+    thumbLabel: "Sektor Persawahan",
     thumbImg: "/assets/potensi_wisata.png",
   },
   {
-    id: "peternakan",
-    title: "SEKTOR PETERNAKAN",
+    id: "umkm",
+    slug: "umkm",
+    title: "UMKM PUSAT UNGGULAN JADIKARYA",
     description:
       "PEMELIHARAAN TERNAK SAPI, KAMBING, DAN BUDIDAYA IKAN AIR TAWAR YANG DIKELOLA OLEH KELOMPOK TANI DAN PEMUDA DESA UNTUK KETAHANAN PANGAN LOKAL.",
     images: ["/assets/hero.png", "/assets/sawah.jpg", "/assets/potensi_wisata.png"],
-    thumbLabel: "Sektor Peternakan",
+    thumbLabel: "UMKM Pusat Unggulan Jadikarya",
     thumbImg: "/assets/hero.png",
   },
   {
-    id: "ekonomi",
-    title: "SEKTOR EKONOMI LOKAL DAN KELEMBAGAAN DESA",
+    id: "pendidikan",
+    slug: "pendidikan",
+    title: "SEKTOR PENDIDIKAN",
     description:
       "PERAN BUMDES DAN UMKM DESA DALAM MENDISTRIBUSIKAN HASIL BUMI SERTA MEMAJUKAN KESEJAHTERAAN MASYARAKAT SECARA MANDIRI DAN INKLUSIF.",
     images: ["/assets/hero.png", "/assets/potensi_wisata.png", "/assets/sawah.jpg"],
-    thumbLabel: "Sektor Ekonomi Lokal dan Kelembagaan Desa",
-    thumbImg: "/assets/ipang.png",
+    thumbLabel: "Sektor Pendidikan",
+    thumbImg: "/assets/hero.png",
+  },
+  {
+    id: "kesehatan",
+    slug: "kesehatan",
+    title: "SEKTOR KESEHATAN",
+    description:
+      "PERAN BUMDES DAN UMKM DESA DALAM MENDISTRIBUSIKAN HASIL BUMI SERTA MEMAJUKAN KESEJAHTERAAN MASYARAKAT SECARA MANDIRI DAN INKLUSIF.",
+    images: ["/assets/hero.png", "/assets/potensi_wisata.png", "/assets/sawah.jpg"],
+    thumbLabel: "Sektor Kesehatan",
+    thumbImg: "/assets/hero.png",
+  },
+  {
+    id: "layanan-publik",
+    slug: "layanan-publik",
+    title: "PELAYANAN MASYARAKAT",
+    description:
+      "PERAN BUMDES DAN UMKM DESA DALAM MENDISTRIBUSIKAN HASIL BUMI SERTA MEMAJUKAN KESEJAHTERAAN MASYARAKAT SECARA MANDIRI DAN INKLUSIF.",
+    images: ["/assets/hero.png", "/assets/potensi_wisata.png", "/assets/sawah.jpg"],
+    thumbLabel: "Pelayanan Masyarakat",
+    thumbImg: "/assets/hero.png",
   },
 ];
 
@@ -169,6 +194,7 @@ export default function ProfilDanPotensiDesa() {
               <PotensiCarousel
                 images={activeSector.images}
                 alt={activeSector.title}
+                href={`/potensi-desa?sektor=${activeSector.slug}`}
               />
             </div>
 
@@ -190,7 +216,7 @@ export default function ProfilDanPotensiDesa() {
                     {sector.title}
                   </h4>
 
-                  <p className="text-white/90 text-sm sm:text-base font-normal leading-relaxed tracking-wide uppercase drop-shadow">
+                  <p className="text-white/90 max-w-xl text-sm sm:text-base font-normal leading-relaxed tracking-wide uppercase drop-shadow">
                     {sector.description}
                   </p>
                 </div>
@@ -198,10 +224,10 @@ export default function ProfilDanPotensiDesa() {
             </div>
           </div>
 
-          {/* Bottom 5 Sector Cards Selector */}
+          {/* Bottom 7 Numbered Pill Selector */}
           <div
             data-aos="fade-up"
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 pt-4"
+            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-3 pt-4"
           >
             {potensiSectors.map((sector, index) => {
               const isActive = activeSectorIndex === index;
@@ -209,24 +235,14 @@ export default function ProfilDanPotensiDesa() {
                 <button
                   key={sector.id}
                   onClick={() => handleSectorChange(index)}
-                  className={`p-3.5 rounded-2xl text-left transition-all duration-300 flex items-center gap-3 bg-white text-slate-900 shadow-xl border-2 ${isActive
-                      ? "ring-4 ring-[#FFE7D2] border-[#0A4532] scale-[1.03]"
-                      : "border-transparent opacity-95 hover:opacity-100 hover:scale-[1.01]"
-                    }`}
+                  className={`p-3.5 rounded-2xl text-left transition-all duration-300 flex items-center gap-3 border-2 shadow-xl ${
+                    isActive
+                      ? "bg-white text-[#0A4532] border-[#FFE7D2] ring-4 ring-[#FFE7D2]/40 scale-[1.03]"
+                      : "bg-white/10 text-white border-white/20 hover:bg-white/20 hover:scale-[1.01]"
+                  }`}
                 >
-                  {/* Thumbnail Image */}
-                  <div className="relative w-12 h-12 rounded-full overflow-hidden flex-shrink-0 border-2 border-[#0A4532]">
-                    <Image
-                      src={sector.thumbImg}
-                      alt={sector.thumbLabel}
-                      fill
-                      sizes="48px"
-                      className="object-cover"
-                    />
-                  </div>
-
                   {/* Label */}
-                  <span className="text-xs font-bold leading-tight text-slate-900 line-clamp-3">
+                  <span className="text-xs font-bold leading-tight line-clamp-3">
                     {sector.thumbLabel}
                   </span>
                 </button>

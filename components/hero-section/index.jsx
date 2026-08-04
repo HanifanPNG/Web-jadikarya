@@ -43,7 +43,7 @@ export default function HeroSection() {
 
           {/* Description Text matching Screenshot */}
           <p className="text-white/95 text-sm sm:text-base md:text-lg font-normal leading-relaxed drop-shadow-md max-w-2xl">
-            Indonesia merupakan negara terluas ke-14 sekaligus negara kepulauan terbesar di dunia. Di dalamnya terdapat berbagai pesona keindahan alamnya. Diantaranya terdapat banyak dataran tinggi dan pegunungan yang indah yang kerap dijadikan sebagai objek wisata.
+            Selamat datang di Website Desa Jadikarya. Temukan informasi,potensi, serta berbagai kegiatan Desa yang mendukung kemajuan dan kesejahteraan masyarakat.
           </p>
 
           {/* Horizontal Divider Line */}

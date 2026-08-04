@@ -7,6 +7,10 @@ export const statistikDesa = [
     satuan: "Jiwa",
     icon: Users,
     desc: "Penduduk terdaftar",
+    breakdown: [
+      { label: "Laki-laki", value: "1386", color: "#0A4532" },
+      { label: "Perempuan", value: "1394", color: "#FFE7D2" },
+    ],
   },
   {
     label: "Jumlah Dusun",
@@ -17,14 +21,14 @@ export const statistikDesa = [
   },
   {
     label: "RT / RW",
-    value: "18 / 6",
-    satuan: "Unit",
+    value: "39 / 11",
+    satuan: "RT / RW",
     icon: Home,
     desc: "Unit lingkungan",
   },
   {
     label: "Kartu Keluarga",
-    value: "970",
+    value: "923",
     satuan: "KK",
     icon: IdCard,
     desc: "Jumlah kartu keluarga",

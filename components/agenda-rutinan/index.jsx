@@ -9,27 +9,21 @@ export default function AgendaRutinan() {
   const agendaList = [
     {
       id: 1,
-      title: "Musyawarah Desa",
-      description: "Pembahasan program kerja, pembangunan, dan aspirasi masyarakat.",
+      title: "Pengajian dan arisan Ibu Ibu",
+      description: "Setiap Jumat pagi, ibu-ibu Desa Jadikarya berkumpul untuk mengikuti pengajian dan arisan sebagai wadah silaturahmi, pembinaan keagamaan, dan memperkuat kebersamaan antarwarga.",
       image: "/assets/agenda_musyawarah.png",
     },
     {
       id: 2,
-      title: "Pengajian Ibu Ibu",
-      description: "Kegiatan keagamaan bagi masyarakat.",
+      title: "Fatayat Muslimat",
+      description: "Dilaksanakan setiap satu bulan sekali di Balai Desa Jadikarya sebagai forum silaturahmi, pembinaan keagamaan, dan pemberdayaan perempuan.",
       image: "/assets/potensi_wisata.png",
     },
     {
       id: 3,
-      title: "Gotong Royong Desa",
-      description: "Kerja bakti pembersihan lingkungan dan fasilitas umum desa.",
+      title: "Kumpulan rutinan malam jum'at",
+      description: "Diselenggarakan setiap malam Jumat di rumah Kepala Dusun pada masing-masing dusun sebagai forum pembinaan keagamaan, memperkuat ukhuwah, dan membangun komunikasi yang baik antarwarga.",
       image: "/assets/sawah.jpg",
-    },
-    {
-      id: 4,
-      title: "Posyandu & Kesehatan",
-      description: "Pemeriksaan kesehatan rutin balita dan lansia Desa Jadikarya.",
-      image: "/assets/hero.png",
     },
   ];
 
@@ -107,10 +101,10 @@ export default function AgendaRutinan() {
 
                         {/* Text Overlay Bottom-Left */}
                         <div className="relative z-10 p-6 sm:p-8 space-y-2 text-white">
-                          <h3 className="font-bold text-2xl sm:text-3xl font-inter text-white group-hover:text-[#FFE7D2] transition-colors leading-tight">
+                          <h3 className="font-bold text-xl sm:text-2xl font-inter text-white group-hover:text-[#FFE7D2] transition-colors leading-tight">
                             {item.title}
                           </h3>
-                          <p className="text-white/90 text-sm sm:text-base font-normal leading-relaxed max-w-md">
+                          <p className="text-white/90 text-xs sm:text-sm font-normal leading-relaxed max-w-md">
                             {item.description}
                           </p>
                         </div>

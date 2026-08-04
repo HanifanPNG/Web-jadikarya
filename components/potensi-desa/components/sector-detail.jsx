@@ -1,34 +1,8 @@
-import PlaceholderImage from "./placeholder-image";
-
-const PLACEHOLDER_COUNT = 6;
-
 export default function SectorDetail({ sector, sectorIndex, isActive }) {
   if (!isActive) return null;
 
   return (
     <div className="animate-fade-in">
-      {/* Gallery Grid */}
-      <div
-        data-aos="fade-up"
-        className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 mb-12"
-      >
-        {Array.from({ length: PLACEHOLDER_COUNT }, (_, i) => (
-          <div
-            key={i}
-            className={`relative aspect-[4/3] rounded-2xl overflow-hidden group cursor-pointer ${
-              i === 0 ? "sm:col-span-2 sm:row-span-2" : ""
-            }`}
-          >
-            <PlaceholderImage
-              label={sector.title}
-              color={sector.color}
-              index={i}
-            />
-            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 rounded-2xl" />
-          </div>
-        ))}
-      </div>
-
       {/* Description */}
       <div data-aos="fade-up" className="max-w-4xl">
         <h2 className="font-inter font-bold text-2xl sm:text-3xl md:text-4xl text-[#0A4532] mb-2">
@@ -46,11 +20,13 @@ export default function SectorDetail({ sector, sectorIndex, isActive }) {
       {/* Commodities / Badges */}
       <div data-aos="fade-up" className="mb-8">
         <h3 className="font-inter font-bold text-lg sm:text-xl text-[#0A4532] mb-4">
-          {sector.id === "pertanian" ? "Komoditas Unggulan" :
-           sector.id === "wisata" ? "Potensi Wisata" :
-           sector.id === "peternakan" ? "Komoditas Peternakan" :
-           sector.id === "kehutanan" ? "Produk Unggulan" :
-           "Penggerak Ekonomi Desa"}
+          {sector.id === "agroforest" ? "Komoditas Unggulan" :
+           sector.id === "gudang-buah" ? "Produk & Komoditas" :
+           sector.id === "persawahan" ? "Potensi Wisata" :
+           sector.id === "umkm" ? "Komoditas UMKM" :
+           sector.id === "pendidikan" ? "Program Unggulan" :
+           sector.id === "kesehatan" ? "Layanan Unggulan" :
+           "Layanan Masyarakat"}
         </h3>
         <div className="flex flex-wrap gap-2 sm:gap-3">
           {sector.commodities.map((item, i) => (
@@ -63,23 +39,6 @@ export default function SectorDetail({ sector, sectorIndex, isActive }) {
             </span>
           ))}
         </div>
-      </div>
-
-      {/* Highlights Cards */}
-      <div data-aos="fade-up" className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
-        {sector.highlights.map((item, i) => (
-          <div
-            key={i}
-            className="rounded-xl border border-slate-200 bg-gradient-to-br from-white to-slate-50 p-5 shadow-sm"
-          >
-            <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
-              {item.label}
-            </span>
-            <p className="font-inter font-bold text-base sm:text-lg text-[#0A4532] mt-1">
-              {item.value}
-            </p>
-          </div>
-        ))}
       </div>
     </div>
   );

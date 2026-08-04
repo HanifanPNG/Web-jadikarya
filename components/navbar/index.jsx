@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -50,8 +51,14 @@ export default function Navbar() {
         
         {/* Left Brand Logo */}
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-amber-500 to-amber-300 flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
-            <span className="text-[#0A4532] font-inter font-bold text-xl">J</span>
+          <div className="w-10 h-10 flex items-center justify-center group-hover:scale-105 transition-transform overflow-hidden">
+            <Image
+              src="/assets/logo-desa.png"
+              alt="Logo Desa Jadikarya"
+              width={55}
+              height={55}
+              className="object-contain w-full h-full"
+            />
           </div>
           <span className="font-inter text-white font-bold text-xl sm:text-2xl tracking-wide group-hover:text-[#FFE7D2] transition-colors">
             Desa Jadikarya
@@ -59,7 +66,7 @@ export default function Navbar() {
         </Link>
 
         {/* Right Navigation Links */}
-        <nav className="hidden md:flex items-center space-x-8">
+        <nav className="hidden md:flex items-center space-x-5">
           {navItems.map((item) => {
             const isActive = activeNav === item.id;
             return item.isPage ? (

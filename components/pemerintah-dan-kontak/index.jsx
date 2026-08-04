@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   MapPin,
   Phone,
@@ -13,18 +14,17 @@ import {
 
 export default function PemerintahDanKontak() {
   const quickLinks = [
-    { label: "Beranda", href: "#hero" },
-    { label: "Profil Desa", href: "#profil-desa" },
-    { label: "Sambutan Kepala Desa", href: "#sambutan" },
-    { label: "Potensi Desa & Komoditas", href: "#potensi-desa" },
-    { label: "Agenda Rutinan Warga", href: "#agenda" },
-    { label: "Kontak & Layanan Publik", href: "#pemerintah-kontak" },
+    { label: "Beranda", href: "/" },
+    { label: "Profil Desa", href: "/profil-desa" },
+    { label: "Sambutan Kepala Desa", href: "/#sambutan" },
+    { label: "Potensi Desa & Komoditas", href: "/potensi-desa" },
+    { label: "Peta Potensi Desa", href: "/peta-potensi" },
+    { label: "Kontak & Layanan Publik", href: "/#pemerintah-kontak" },
   ];
 
   const socialLinks = [
     { name: "WhatsApp", icon: MessageCircle, href: "https://wa.me/6282265599797" },
     { name: "Instagram", icon: Instagram, href: "#" },
-    { name: "Facebook", icon: Facebook, href: "#" },
     { name: "YouTube", icon: Youtube, href: "#" },
   ];
 
@@ -90,13 +90,13 @@ export default function PemerintahDanKontak() {
             <ul className="space-y-2.5 pt-2">
               {quickLinks.map((link, idx) => (
                 <li key={idx}>
-                  <a
+                  <Link
                     href={link.href}
                     className="text-xs sm:text-sm text-white/80 hover:text-[#FFE7D2] transition-colors flex items-center gap-1.5 group"
                   >
                     <ArrowRight size={14} className="text-[#FFE7D2] opacity-0 group-hover:opacity-100 transition-opacity" />
                     <span>{link.label}</span>
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

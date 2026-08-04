@@ -333,8 +333,7 @@ export default function ProfilDesaPage() {
                 </h2>
                 <div className="w-24 sm:w-32 h-1 bg-[#0A4532] mx-auto rounded-full" />
                 <p className="text-slate-500 text-sm sm:text-base mt-3 max-w-xl mx-auto">
-                  Data kependudukan dan administratif Desa Jadikarya yang diperbarui
-                  secara berkala oleh pemerintah desa.
+                  Data kependudukan dan administratif Desa Jadikarya tahun 2026
                 </p>
               </div>
 
@@ -345,6 +344,9 @@ export default function ProfilDesaPage() {
               >
                 {statistikDesa.map((stat, i) => {
                   const Icon = stat.icon;
+                  const total = stat.breakdown
+                    ? stat.breakdown.reduce((sum, b) => sum + parseInt(b.value, 10), 0)
+                    : 0;
                   return (
                     <GlassCard key={i} className="p-6 sm:p-7">
                       <div className="w-12 h-12 rounded-xl bg-[#0A4532]/90 backdrop-blur-sm flex items-center justify-center mb-5 shadow-lg">
@@ -356,6 +358,45 @@ export default function ProfilDesaPage() {
                       <div className="text-xs font-bold text-[#0A4532]/30 tracking-widest uppercase mb-3">
                         {stat.satuan}
                       </div>
+
+                      {stat.breakdown && (
+                        <div className="mb-3">
+                          {/* Relative share progress bar */}
+                          <div className="flex w-full h-2 rounded-full overflow-hidden bg-white/60 mb-2">
+                            {stat.breakdown.map((b) => (
+                              <div
+                                key={b.label}
+                                className="h-full"
+                                style={{
+                                  width: `${(parseInt(b.value, 10) / total) * 100}%`,
+                                  backgroundColor: b.color,
+                                }}
+                              />
+                            ))}
+                          </div>
+                          {/* Breakdown rows */}
+                          <div className="flex flex-col gap-1">
+                            {stat.breakdown.map((b) => (
+                              <div
+                                key={b.label}
+                                className="flex items-center justify-between text-sm"
+                              >
+                                <span className="flex items-center gap-2 text-slate-700 font-medium">
+                                  <span
+                                    className="w-2.5 h-2.5 rounded-full"
+                                    style={{ backgroundColor: b.color }}
+                                  />
+                                  {b.label}
+                                </span>
+                                <span className="font-bold text-[#0A4532]">
+                                  {parseInt(b.value, 10).toLocaleString("id-ID")}
+                                </span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+
                       <div className="border-t border-white/30 pt-3">
                         <p className="font-semibold text-slate-800 text-sm sm:text-base">
                           {stat.label}
