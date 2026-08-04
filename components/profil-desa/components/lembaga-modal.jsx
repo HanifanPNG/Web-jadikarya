@@ -112,7 +112,7 @@ export default function LembagaModal({ isOpen, onClose, lembaga }) {
               </div>
 
               {/* Right Column - Sidebar */}
-              <div className="hidden lg:block">
+              <div className="block">
                 <div className="sticky top-24 space-y-4">
                   {/* Institution Card */}
                   <div className="rounded-xl bg-gradient-to-br from-[#0A4532] via-[#0E5A42] to-emerald-600 p-6 text-white relative overflow-hidden">

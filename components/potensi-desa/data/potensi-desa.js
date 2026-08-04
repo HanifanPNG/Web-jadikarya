@@ -19,7 +19,7 @@ export const potensiDesaData = [
     id: "gudang-buah",
     title: "Gudang Buah (Sumber Rezeki)",
     subtitle: "Sortir & Distribusi Buah",
-    heroImage: "/assets/gudangBuah/gudang-buah2.jpeg",
+    heroImage: "/assets/gudangBuah/gudang-buah2.webp",
     description:
       "Gudang buah durian dan manggis merupakan pusat sortir dalam negeri maupun luar negeri yang menjadi sumber rezeki utama masyarakat Desa Jadikarya.",
     detailDescription:
@@ -33,9 +33,9 @@ export const potensiDesaData = [
   },
   {
     id: "persawahan",
-    title: "Sektor Persawahan",
+    title: "Sektor Persawahan & Perkebunan",
     subtitle: "Lanskap Alam & Potensi Wisata",
-    heroImage: "/assets/potensi_wisata.png",
+    heroImage: "/assets/persawahan/sawah3.jpeg",
     description:
       "Keindahan sungai alam dan perbukitan hijau Langkaplancar potensial dikembangkan menjadi destinasi wisata arung jeram dan desa wisata berkelanjutan.",
     detailDescription:

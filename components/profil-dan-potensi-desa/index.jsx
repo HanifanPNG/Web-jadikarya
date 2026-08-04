@@ -22,19 +22,19 @@ const potensiSectors = [
     title: "GUDANG BUAH (sumber rezeki)",
     description:
       "SUMBER REZEKI Gudang buah durian dan manggis ini merupakan Gudang sortir ke dalam negeri dan luar negeri",
-    images: ["/assets/gudangBuah/gudang-buah1.jpeg", "/assets/gudangBuah/gudang-buah2.jpeg", "/assets/hero.png"],
+    images: ["/assets/gudangBuah/gudang-buah1.webp", "/assets/gudangBuah/gudang-buah2.webp"],
     thumbLabel: "Gudang Buah (sumber rezeki)",
-    thumbImg: "/assets/gudangBuah/gudang-buah1.jpeg",
+    thumbImg: "/assets/gudangBuah/gudang-buah1.webp",
   },
   {
     id: "Persawahan ",
-    slug: "persawahan",
-    title: "SEKTOR PERSAWAHAN",
+    slug: "persawahan&kebun",
+    title: "SEKTOR PERSAWAHAN & PERKEBUNAN",
     description:
       "KEINDAHAN SUNGAI ALAM DAN PERBUKITAN HIJAU LANGKAPLANCAR POTENSIAL DIKEMBANGKAN MENJADI DESTINASI WISATA ARUNG JERAM DAN DESA WISATA BERKELANJUTAN.",
-    images: ["/assets/potensi_wisata.png", "/assets/hero.png", "/assets/sawah.jpg"],
-    thumbLabel: "Sektor Persawahan",
-    thumbImg: "/assets/potensi_wisata.png",
+    images: ["/assets/persawahan/sawah3.jpeg", "/assets/persawahan/hero.png", "/assets/persawahan/pohon_manggis.jpg", "/assets/persawahan/sawah4.webp", "/assets/persawahan/sawah6.webp"],
+    thumbLabel: "Sektor Persawahan & Perkebunan",
+    thumbImg: "/assets/persawahan/sawah3.jpeg",
   },
   {
     id: "umkm",
@@ -124,7 +124,7 @@ export default function ProfilDanPotensiDesa() {
           >
             <div className="relative w-full h-[320px] sm:h-[400px] lg:h-[480px] rounded-tl-[140px] sm:rounded-tl-[180px] lg:rounded-tl-[220px] overflow-hidden shadow-2xl">
               <Image
-                src="/assets/sawah.jpg"
+                src="/assets/persawahan/sawah3.jpeg"
                 alt="Pemandangan Gunung dan Sawah Desa Jadikarya"
                 fill
                 priority
