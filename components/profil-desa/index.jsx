@@ -11,9 +11,22 @@ import { GlassCard } from "./components/glass-card";
 import { SectionShell } from "./components/section-shell";
 import { PersonCard } from "./components/person-card";
 import { GroupCard } from "./components/group-card";
+import LembagaModal from "./components/lembaga-modal";
 
 export default function ProfilDesaPage() {
   const [hoveredLembaga, setHoveredLembaga] = useState(null);
+  const [selectedLembaga, setSelectedLembaga] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = (lembaga) => {
+    setSelectedLembaga(lembaga);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedLembaga(null);
+  };
 
   return (
     <>
@@ -283,7 +296,8 @@ export default function ProfilDesaPage() {
                       key={lembaga.id}
                       onMouseEnter={() => setHoveredLembaga(lembaga.id)}
                       onMouseLeave={() => setHoveredLembaga(null)}
-                      className={`rounded-xl border bg-white/70 backdrop-blur-md p-5 transition-all duration-200 cursor-default shadow-lg shadow-black/5 ${
+                      onClick={() => openModal(lembaga)}
+                      className={`rounded-xl border bg-white/70 backdrop-blur-md p-5 transition-all duration-200 cursor-pointer shadow-lg shadow-black/5 ${
                         isHovered
                           ? "border-[#0A4532]/30 -translate-y-0.5 shadow-xl shadow-black/10"
                           : "border-white/30 hover:border-[#0A4532]/20"
@@ -409,9 +423,10 @@ export default function ProfilDesaPage() {
               </div>
             </SectionShell>
           </section>
-
         </div>
       </div>
+
+      <LembagaModal isOpen={isModalOpen} onClose={closeModal} lembaga={selectedLembaga} />
     </>
   );
 }
