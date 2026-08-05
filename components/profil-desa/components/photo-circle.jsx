@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function PhotoCircle({ foto, inisial, size = "md" }) {
   const dim = {
     lg: "h-24 w-24 text-2xl",
@@ -10,10 +12,12 @@ export function PhotoCircle({ foto, inisial, size = "md" }) {
       className={`relative mx-auto overflow-hidden rounded-full border bg-slate-100 ${dim[size]} ${ring}`}
     >
       {foto ? (
-        <img
+        <Image
           src={foto}
           alt={inisial}
-          className="h-full w-full object-cover object-top"
+          fill
+          sizes="96px"
+          className="object-cover object-top"
         />
       ) : (
         <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-[#0A4532] to-[#0E5A42] font-extrabold text-white">

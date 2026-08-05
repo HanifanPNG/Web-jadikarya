@@ -1,5 +1,6 @@
 import { MessageSquare } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -7,11 +8,11 @@ export default function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/assets/alam/alam2.webp"
+          src="/assets/alam/alam1.webp"
           alt="Pemandangan Desa Jadikarya"
           fill
           priority
-          sizes="(max-width: 768px) 150vw, 100vw"
+          sizes="100vw"
           quality={90}
           className="object-cover object-center"
         />
@@ -51,18 +52,18 @@ export default function HeroSection() {
 
           {/* Action Buttons */}
           <div className="flex flex-wrap items-center gap-4 pt-2">
-            <a
-              href="#profil-desa"
+            <Link
+              href="/profil-desa"
               className="px-8 py-3 rounded-full bg-black/40 hover:bg-black/60 backdrop-blur-md border border-white/20 text-white font-medium text-sm sm:text-base transition-all hover:scale-105 shadow-lg"
             >
               Profil Desa
-            </a>
-            <a
-              href="#potensi-desa"
+            </Link>
+            <Link
+              href="/peta-potensi"
               className="px-8 py-3 rounded-full bg-black/30 hover:bg-black/50 backdrop-blur-md border border-white/20 text-white font-medium text-sm sm:text-base transition-all hover:scale-105 shadow-lg"
             >
               Lihat Peta Potensi
-            </a>
+            </Link>
           </div>
         </div>
       </div>

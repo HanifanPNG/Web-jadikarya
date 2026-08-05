@@ -153,6 +153,7 @@ export default function ProfilDanPotensiDesa() {
                 fill
                 className="object-cover object-center"
                 sizes="100vw"
+                fetchPriority={activeSectorIndex === idx ? "high" : "low"}
               />
             </div>
           ))}

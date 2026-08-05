@@ -1,25 +1,53 @@
 {
   "pages": {
-    "/profil-desa/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/profil-desa/page.js"
+    "/_not-found/page": [
+      "static/chunks/webpack-56ca6c29575f3bf8.js",
+      "static/chunks/fd9d1056-34a5f678ac00dcfa.js",
+      "static/chunks/117-32af496f67249d34.js",
+      "static/chunks/main-app-6dfa1851f19642ea.js",
+      "static/chunks/app/_not-found/page-3ba2daf3b8b6186c.js"
     ],
     "/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
+      "static/chunks/webpack-56ca6c29575f3bf8.js",
+      "static/chunks/fd9d1056-34a5f678ac00dcfa.js",
+      "static/chunks/117-32af496f67249d34.js",
+      "static/chunks/main-app-6dfa1851f19642ea.js",
+      "static/css/65aa3619a1925c9d.css",
+      "static/css/eac8f5e3f027eff2.css",
+      "static/chunks/app/layout-36b99ba95b0e089a.js"
     ],
     "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/chunks/webpack-56ca6c29575f3bf8.js",
+      "static/chunks/fd9d1056-34a5f678ac00dcfa.js",
+      "static/chunks/117-32af496f67249d34.js",
+      "static/chunks/main-app-6dfa1851f19642ea.js",
+      "static/chunks/953-231b2b6b5c18b63f.js",
+      "static/chunks/app/page-b87e6ef96bde33d8.js"
     ],
     "/potensi-desa/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/potensi-desa/page.js"
+      "static/chunks/webpack-56ca6c29575f3bf8.js",
+      "static/chunks/fd9d1056-34a5f678ac00dcfa.js",
+      "static/chunks/117-32af496f67249d34.js",
+      "static/chunks/main-app-6dfa1851f19642ea.js",
+      "static/chunks/953-231b2b6b5c18b63f.js",
+      "static/chunks/app/potensi-desa/page-bef08301efee6335.js"
+    ],
+    "/peta-potensi/page": [
+      "static/chunks/webpack-56ca6c29575f3bf8.js",
+      "static/chunks/fd9d1056-34a5f678ac00dcfa.js",
+      "static/chunks/117-32af496f67249d34.js",
+      "static/chunks/main-app-6dfa1851f19642ea.js",
+      "static/chunks/953-231b2b6b5c18b63f.js",
+      "static/chunks/app/peta-potensi/page-efc83d8bbeef487f.js"
+    ],
+    "/profil-desa/page": [
+      "static/chunks/webpack-56ca6c29575f3bf8.js",
+      "static/chunks/fd9d1056-34a5f678ac00dcfa.js",
+      "static/chunks/117-32af496f67249d34.js",
+      "static/chunks/main-app-6dfa1851f19642ea.js",
+      "static/chunks/953-231b2b6b5c18b63f.js",
+      "static/chunks/451-0843ac607487f143.js",
+      "static/chunks/app/profil-desa/page-7958212f9072a07a.js"
     ]
   }
 }

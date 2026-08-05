@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function App() {
   return (
@@ -47,10 +48,12 @@ export default function App() {
               {/* Decorative border ring - changed to elegant dark gradient */}
               <div className="relative w-64 h-[330px] sm:w-68 sm:h-[360px] lg:w-[300px] lg:h-[400px] rounded-t-full rounded-b-3xl p-[3px] bg-gradient-to-b from-[#042F1E]/40 via-[#042F1E]/10 to-[#042F1E]/30 shadow-2xl shadow-[#042F1E]/10">
                 <div className="relative w-full h-full rounded-t-full rounded-b-[21px] overflow-hidden bg-slate-200">
-                  <img
+                  <Image
                     src="/assets/Foto_%20anggota_desa/Drs.DadangSupriatna,M.Pd.jpeg"
                     alt="Kepala Desa Jadikarya - Drs. Dadang Supratna, M.Pd"
-                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
+                    fill
+                    sizes="(max-width: 768px) 320px, 300px"
+                    className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
                   />
                   {/* Bottom gradient overlay for polish - blends with light bg */}
                   <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#F8FAF8] to-transparent opacity-90" />
