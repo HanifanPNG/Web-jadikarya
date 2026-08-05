@@ -23,7 +23,7 @@ export default function PemerintahDanKontak() {
   ];
 
   const socialLinks = [
-    { name: "WhatsApp", icon: MessageCircle, href: "https://wa.me/6282265599797" },
+    { name: "WhatsApp", icon: MessageCircle, href: "https://wa.me/6282126967720" },
     { name: "Instagram", icon: Instagram, href: "#" },
     { name: "YouTube", icon: Youtube, href: "#" },
   ];
@@ -112,16 +112,16 @@ export default function PemerintahDanKontak() {
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-[#FFE7D2] flex-shrink-0 mt-0.5" />
                 <span>
-                  <strong>Alamat:</strong> CFJG+GWM, Desa Jadikarya, Kec. Langkaplancar, Kab. Pangandaran, Jawa Barat 46391
+                  <strong>Alamat:</strong> jl. Raya Bojong no. 28, Dusun jajaway, RT 1 RW 1
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-[#FFE7D2] flex-shrink-0" />
-                <span><strong>Telepon:</strong> 0822 6559 9797</span>
+                <span><strong>Telepon:</strong> +62 821-2696-7720</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-[#FFE7D2] flex-shrink-0" />
-                <span><strong>Email:</strong> Sekredesajadikarya@gmail.com</span>
+                <span><strong>Email:</strong> djadikarya@gmail.com</span>
               </li>
               <li className="flex items-start gap-3">
                 <Clock size={18} className="text-[#FFE7D2] flex-shrink-0 mt-0.5" />

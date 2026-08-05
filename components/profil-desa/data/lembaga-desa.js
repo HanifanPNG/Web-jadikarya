@@ -12,31 +12,6 @@ import {
 
 export const lembagaDesa = [
   {
-    id: "bpd",
-    singkatan: "BPD",
-    nama: "Badan Permusyawaratan Desa",
-    deskripsi:
-      "Lembaga legislatif desa yang menampung dan menyalurkan aspirasi masyarakat dalam penyelenggaraan pemerintahan desa.",
-    icon: Landmark,
-    details: {
-      since: "2019",
-      established: "Terbentuk berdasarkan Peraturan Desa Jadikarya No. 8/2019 tentang Pembentukan Lembaga Desa.",
-      members: "7 anggota (5 laki-laki, 2 perempuan)",
-      chairman: "Ujang Sutisna",
-      fullDescription:
-        "Badan Permusyawaratan Desa (BPD) merupakan lembaga legislatif Desa Jadikarya yang berfungsi sebagai wadah aspirasi dan pengawasan masyarakat. BPD terdiri dari 7 anggota yang dipilih melalui musyawarah desa untuk periode jabatan 6 tahun. BPD bertugas membahas dan mengesahkan Peraturan Desa, mengawasi pelaksanaan APBDes, menampung dan menyalurkan aspirasi masyarakat, serta menjadi mitra pemerintah desa dalam penyelenggaraan pemerintahan. Setiap bulan, BPD mengadakan musyawarah untuk mengevaluasi kinerja pemerintah desa dan merencanakan program kerja selanjutnya.",
-      activities: [
-        "Membahas dan mengesahkan Peraturan Desa",
-        "Mengawasi pelaksanaan APBDes dan APBDes Perubahan",
-        "Menyerap aspirasi masyarakat",
-        "Menyusun program kerja tahunan",
-        "Melakukan pengawasan kinerja pemerintah desa",
-        "Berpartisipasi dalam musyawarah desa"
-      ],
-      vision: "Menjadi lembaga legislatif yang profesional, akuntabel, dan responsif terhadap aspirasi masyarakat"
-    }
-  },
-  {
     id: "lpm",
     singkatan: "LPM",
     nama: "Lembaga Pemberdayaan Masyarakat",
@@ -112,34 +87,9 @@ export const lembagaDesa = [
     }
   },
   {
-    id: "linmas",
-    singkatan: "Linmas",
-    nama: "Perlindungan Masyarakat",
-    deskripsi:
-      "Satuan pelindung masyarakat yang bertugas menjaga keamanan, ketertiban, dan kenyamanan lingkungan desa.",
-    icon: Shield,
-    details: {
-      since: "2019",
-      established: "Dibentuk sebagai bagian dari sistem keamanan swakarsa di Desa Jadikarya.",
-      members: "20 anggota (18 laki-laki, 2 perempuan)",
-      chairman: "Ujang",
-      fullDescription:
-        "Satuan Linmas (Perlindungan Masyarakat) Desa Jadikarya merupakan satuan perlindungan masyarakat yang dibentuk untuk menjaga keamanan, ketertiban, dan kenyamanan lingkungan. Linmas didirikan pada tahun 2019 sebagai bagian dari sistem keamanan swakarsa di desa. Linmas terdiri dari masyarakat yang dilatih untuk memberikan perlindungan dan pengamanan di tingkat RT/RW. Linmas bertugas membantu kepolisian dalam menjaga keamanan lingkungan, memberikan pertolongan pertama pada kecelakaan, dan melakukan pencegahan dini terhadap gangguan keamanan.",
-      activities: [
-        "Patroli keamanan lingkungan",
-        "Pengamanan acara desa",
-        "Pertolongan pertama pada kecelakaan",
-        "Penyuluhan keamanan dan ketertiban",
-        "Pencegahan konflik dan mediasi",
-        "Latihan kesiapsiagaan bencana"
-      ],
-      vision: "Mewujudkan lingkungan yang aman, nyaman, dan damai melalui perlindungan masyarakat yang terlatih dan responsif"
-    }
-  },
-  {
-    id: "bumdes",
-    singkatan: "BUMDes",
-    nama: "Badan Usaha Milik Desa",
+    id: "kopdes",
+    singkatan: "KOPDES",
+    nama: "Koperasi Desa",
     deskripsi:
       "Lembaga usaha desa yang dikelola secara mandiri untuk meningkatkan perekonomian dan pendapatan asli desa.",
     icon: Building2,

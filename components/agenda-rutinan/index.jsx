@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 
@@ -9,27 +9,46 @@ export default function AgendaRutinan() {
   const agendaList = [
     {
       id: 1,
-      title: "Pengajian dan arisan Ibu Ibu",
+      title: "Pengajian dan arisan Ibu-ibu",
       description: "Setiap Jumat pagi, ibu-ibu Desa Jadikarya berkumpul untuk mengikuti pengajian dan arisan sebagai wadah silaturahmi, pembinaan keagamaan, dan memperkuat kebersamaan antarwarga.",
       image: "/assets/agenda_musyawarah.png",
     },
     {
       id: 2,
-      title: "Fatayat Muslimat",
+      title: " Pengajian fatayatan (Ibu-ibu fatayat)",
       description: "Dilaksanakan setiap satu bulan sekali di Balai Desa Jadikarya sebagai forum silaturahmi, pembinaan keagamaan, dan pemberdayaan perempuan.",
       image: "/assets/potensi_wisata.png",
     },
     {
       id: 3,
-      title: "Kumpulan rutinan malam jum'at",
-      description: "Diselenggarakan setiap malam Jumat di rumah Kepala Dusun pada masing-masing dusun sebagai forum pembinaan keagamaan, memperkuat ukhuwah, dan membangun komunikasi yang baik antarwarga.",
+      title: "Pengajian bulanan (MUI)",
+      description: "Dilaksanakan setiap satu bulan sekali dengan jadwal sekitar dua minggu setelah kegiatan Fatayat.",
+      image: "/assets/sawah.jpg",
+    },
+    {
+      id: 4,
+      title: "Pengajian PHBI",
+      description: "Kegiatan pengajian yang diselenggarakan pada setiap peringatan hari besar Islam, seperti Maulid Nabi Muhammad SAW, Tahun Baru Islam (1 Muharam), Isra Mikraj, Nuzulul Qur'an, dan momentum keagamaan lainnya.",
       image: "/assets/sawah.jpg",
     },
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
-  const itemsPerPage = 2;
+  const [itemsPerPage, setItemsPerPage] = useState(2);
   const totalSlides = Math.ceil(agendaList.length / itemsPerPage);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(min-width: 768px)");
+    const updateItems = () => setItemsPerPage(mq.matches ? 2 : 1);
+    updateItems();
+    mq.addEventListener("change", updateItems);
+    return () => mq.removeEventListener("change", updateItems);
+  }, []);
+
+  useEffect(() => {
+    setCurrentSlide((prev) => Math.min(prev, totalSlides - 1));
+  }, [totalSlides]);
+
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % totalSlides);
@@ -49,7 +68,7 @@ export default function AgendaRutinan() {
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#FFE7D2]/25 rounded-full blur-[120px] -translate-x-1/3 translate-y-1/3 pointer-events-none select-none" />
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
-        
+
         {/* Centered Header Title */}
         <div className="text-center space-y-2" data-aos="fade-up">
           <h2 className="font-inter font-bold text-2xl sm:text-3xl text-[#0A4532] tracking-widest uppercase">
@@ -60,13 +79,13 @@ export default function AgendaRutinan() {
 
         {/* Outer White Card Container matching Screenshot */}
         <div className="relative bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-xl shadow-slate-200/50 overflow-hidden space-y-8" data-aos="fade-up" data-aos-delay="100">
-          
+
           {/* Top Decorative Green Accent Bar */}
           <div className="absolute top-0 left-6 right-6 h-1 bg-[#0A4532] rounded-b-full" />
 
           {/* Sliding Track Viewport */}
           <div className="relative overflow-hidden w-full py-2">
-            
+
             {/* Smooth Horizontal Track */}
             <div
               className="flex w-full transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)]"
@@ -138,11 +157,10 @@ export default function AgendaRutinan() {
               <button
                 key={idx}
                 onClick={() => setCurrentSlide(idx)}
-                className={`h-2.5 rounded-full transition-all duration-500 ${
-                  currentSlide === idx
-                    ? "w-10 bg-[#0A4532]"
-                    : "w-2.5 bg-slate-300 hover:bg-slate-400"
-                }`}
+                className={`h-2.5 rounded-full transition-all duration-500 ${currentSlide === idx
+                  ? "w-10 bg-[#0A4532]"
+                  : "w-2.5 bg-slate-300 hover:bg-slate-400"
+                  }`}
                 aria-label={`Go to slide ${idx + 1}`}
               />
             ))}

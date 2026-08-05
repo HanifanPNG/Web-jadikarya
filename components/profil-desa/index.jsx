@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { Star, Target } from "lucide-react";
-import { tentangDesa } from "./data/tentang-desa";
+import { Star, Target, History, BookOpen } from "lucide-react";
+import { tentangDesa, sejarahDesa } from "./data/tentang-desa";
 import { strukturDesa, grupTema } from "./data/struktur-desa";
 import { lembagaDesa } from "./data/lembaga-desa";
 import { statistikDesa } from "./data/statistik-desa";
@@ -124,6 +124,38 @@ export default function ProfilDesaPage() {
         <div className="max-w-6xl mx-auto px-6 sm:px-10 lg:px-16 py-16 space-y-10 sm:space-y-12">
 
           {/* ══════════════════════════════════════════════════
+              SECTION 0 — SEJARAH DESA
+          ══════════════════════════════════════════════════ */}
+          <section id="sejarah-desa">
+            <SectionShell>
+              <div data-aos="fade-up" className="text-center space-y-2 mb-12">
+                <h2 className="font-inter font-bold text-2xl sm:text-3xl text-[#0A4532] tracking-widest uppercase">
+                  Sejarah Desa
+                </h2>
+                <div className="w-24 sm:w-32 h-1 bg-[#0A4532] mx-auto rounded-full" />
+              </div>
+
+              <div data-aos="fade-up" className="w-full space-y-6">
+                {/* Deskripsi Sejarah */}
+                <div className="rounded-2xl border border-[#0A4532]/10 bg-[#0A4532]/5 p-6 sm:p-8 relative overflow-hidden">
+                  <div className="absolute -right-8 -bottom-8 text-[#0A4532]/5 pointer-events-none">
+                    <BookOpen size={160} />
+                  </div>
+                  <div className="relative z-10">
+                    <div className="inline-flex items-center gap-2 rounded-full bg-[#0A4532] text-white px-3.5 py-1 text-xs font-bold uppercase tracking-wider mb-4 shadow-sm">
+                      <History size={14} />
+                      Asal-Usul Desa
+                    </div>
+                    <p className="text-slate-700 text-sm sm:text-base leading-relaxed text-justify">
+                      {sejarahDesa.narasi}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </SectionShell>
+          </section>
+
+          {/* ══════════════════════════════════════════════════
               SECTION 1 — VISI & MISI
           ══════════════════════════════════════════════════ */}
           <section id="visi-misi">
@@ -149,8 +181,7 @@ export default function ProfilDesaPage() {
                     &ldquo;
                   </div>
                   <blockquote className="relative font-serif text-xl sm:text-2xl font-bold leading-snug text-white">
-                    Terwujudnya Desa Jadikarya yang Maju, Mandiri, dan Sejahtera
-                    Berbasis Potensi Lokal.
+                    DENGAN IMAN DAN TAKWA BERSAMA WARGA, KITA MEWUJUDKAN DESA JADIKARYA LEBIH MAJU DAN MANDIRI
                   </blockquote>
                   <div className="w-12 h-0.5 bg-white/20 rounded-full mt-5" />
                 </div>
@@ -163,12 +194,9 @@ export default function ProfilDesaPage() {
                   </div>
                   <ol className="space-y-3">
                     {[
-                      "Meningkatkan kualitas pelayanan publik yang transparan, akuntabel, dan profesional.",
-                      "Mengembangkan potensi pertanian, perkebunan, dan kehutanan secara berkelanjutan.",
-                      "Memberdayakan masyarakat melalui program ekonomi kreatif, UMKM, dan BUMDes.",
-                      "Meningkatkan kualitas infrastruktur dasar desa yang merata dan berkeadilan.",
-                      "Mendorong partisipasi aktif masyarakat dalam musyawarah dan pembangunan desa.",
-                      "Melestarikan nilai budaya dan kearifan lokal desa sebagai identitas bangsa.",
+                      "Mewujudkan dan mengembangkan kegiatan keagamaan untuk menambah keimanan dan ketakwaan kepada tuhan yang maha Esa.",
+                      "Meningkatkan Kesehatan, kebersihan, keindahan dan kerindangan wilayah desa",
+                      "Mewujudkan dan meningkatkan serta meneruskan tata Kelola pemerintahan desa yang baik"
                     ].map((misi, i) => (
                       <li key={i} className="flex items-start gap-3">
                         <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[#0A4532] text-white text-xs font-bold flex items-center justify-center mt-0.5 shadow-md">

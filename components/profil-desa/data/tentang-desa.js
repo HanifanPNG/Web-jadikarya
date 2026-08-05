@@ -17,31 +17,38 @@ export const tentangDesa = {
     },
     {
       icon: Mountain,
-      label: "Pariwisata Alam",
+      label: "Komoditas Utama",
       items: [
-        "Potensi wisata sungai dan perbukitan hijau",
-        "Area perkebunan dengan panorama pegunungan",
-        "Dikembangkan sebagai desa wisata berkelanjutan",
+        "Tanaman Padi",
+        "Kelapa",
+        "Manggis",
+        "Durian",
       ],
     },
     {
       icon: Compass,
       label: "Batas Wilayah",
       items: [
-        "Utara: Desa Bojong, Langkaplancar",
-        "Selatan: Kecamatan Cigugur/area hutan selatan Langkaplancar.",
-        "Barat: Desa Pangkalan",
-        "Timur:  Desa Bangunkarya, Desa Cimanggu, dan Desa Bungur Raya",
+        "Utara: Desa bojong, langkaplancar",
+        "Timur: Desa Bangunkarya & Desa Bungur Raya",
+        "Selatan: Desa Jadimulya",
+        "Barat: Desa Karangkamiri",
       ],
     },
     {
       icon: Droplets,
       label: "Tata Guna Lahan",
       items: [
-        "Perkebunan: ±1.001 Ha — komoditas utama",
-        "Persawahan: ±131 Ha — sawah tadah hujan",
-        "Pemukiman: ±447 Ha — permukiman warga",
+        "Persawahan: ±463,45 Ha",
+        "Pemukiman: ±112,60 Ha",
+        "Bangunan & Fasilitas: ±78,00 Ha",
       ],
     },
   ],
 };
+
+export const sejarahDesa = {
+  narasi:
+    "Sebelum tahun 1979 Desa Jadikarya Kecamatan Langkaplancar Kabupaten Pangandaran merupakan bagian dari Desa Jadimulya Kecamatan Cigugur. Perkembangan wilayah yang cukup pesat didukung oleh potensi daerah yang memadai mendorong terjadinya pemekaran wilayah Desa Jadikarya menjadi Desa baru di Kecamatan Cigugur pada tahun 1979. Pada tahun 1986 Desa Jadikarya masuk ke Kecamatan Langkaplancar seiring dengan terjadinya pemisahan Langkaplancar menjadi Kecamatan baru di Kecamatan Cigugur. Pada tahun 1993 Wilayah Bangunkarya memekarkan diri dari wilayah Jadikarya menjadi Desa mandiri yaitu Desa Bangunkarya",
+};
+

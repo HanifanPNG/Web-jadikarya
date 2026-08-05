@@ -2,7 +2,7 @@ export const strukturDesa = {
   top: {
     id: "kades",
     jabatan: "Kepala Desa",
-    nama: "Drs. Dadang Supratna, M.Pd",
+    nama: "Drs. Dadang Supriatna, M.Pd",
     inisial: "DS",
     foto: "/assets/Foto_%20anggota_desa/Drs.DadangSupriatna,M.Pd.jpeg",
   },
