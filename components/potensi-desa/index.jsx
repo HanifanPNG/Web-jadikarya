@@ -41,11 +41,11 @@ export default function PotensiDesaPage({ initialSector }) {
             className="object-cover object-center"
           />
           {/* Dark overlay with low opacity to dim the background image */}
-          <div className="absolute inset-0 bg-[#041a12]/60" />
+          <div className="absolute inset-0 bg-[#041a12]/50" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/20" />
         </div>
 
-        <div className="absolute bottom-0 left-0 right-0 h-36 sm:h-48 lg:h-56 bg-gradient-to-t from-[#0A4532] via-[#0A4532]/60 to-transparent z-[5] pointer-events-none" />
+        <div className="absolute bottom-0 left-0 right-0 h-36 sm:h-48 lg:h-56 bg-gradient-to-t from-[#0A4532] via-[#0A4532]/50 to-transparent z-[3] pointer-events-none" />
 
         <div className="relative z-10 w-full px-6 sm:px-12 lg:px-16">
           <div className="max-w-6xl mx-auto text-center">

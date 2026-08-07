@@ -35,21 +35,32 @@ export default function ProfilDesaPage() {
       ══════════════════════════════════════════════════ */}
       <section className="relative min-h-screen flex items-center pt-32 pb-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
+          {/* Desktop Background Image */}
           <Image
-            src="/assets/persawahan/hero.png"
+            src="/assets/alam/alam3.webp"
             alt="Pemandangan Desa Jadikarya"
             fill
             priority
-            sizes="(max-width: 768px) 150vw, 100vw"
+            sizes="100vw"
             quality={90}
-            className="object-cover object-center"
+            className="hidden sm:block object-cover object-center"
+          />
+          {/* Mobile Background Image (Portrait) */}
+          <Image
+            src="/assets/alam/potrait-alam3.webp"
+            alt="Pemandangan Desa Jadikarya"
+            fill
+            priority
+            sizes="100vw"
+            quality={90}
+            className="block sm:hidden object-cover object-center"
           />
           {/* Dark overlay with low opacity to dim the background image */}
-          <div className="absolute inset-0 bg-[#041a12]/60" />
+          <div className="absolute inset-0 bg-[#041a12]/25" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/20" />
         </div>
 
-        <div className="absolute bottom-0 left-0 right-0 h-36 sm:h-48 lg:h-56 bg-gradient-to-t from-[#0A4532] via-[#0A4532]/60 to-transparent z-[5] pointer-events-none" />
+        <div className="absolute bottom-0 left-0 right-0 h-36 sm:h-48 lg:h-56 bg-gradient-to-t from-[#0A4532] via-[#0A4532]/50 to-transparent z-[3] pointer-events-none" />
 
         <div className="relative z-10 w-full px-6 sm:px-12 lg:px-16">
           <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">

@@ -3,7 +3,7 @@ export const potensiDesaData = [
     id: "agroforest",
     title: "Sektor Agroforestik",
     subtitle: "Potensi Pertanian & Perhutanan Sosial",
-    heroImage: "/assets/sawah.jpg",
+    heroImage: "/assets/agroforestik/duren1.webp",
     description:
       "Didukung tanah yang subur, Desa Jadikarya menghasilkan berbagai komoditas unggulan seperti jagung, kapulaga, durian, alpukat, manggis, dan lada yang menjadi penopang perekonomian masyarakat.",
     detailDescription:

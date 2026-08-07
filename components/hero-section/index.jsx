@@ -7,23 +7,34 @@ export default function HeroSection() {
     <section id="hero" className="relative min-h-screen flex items-center pt-32 pb-24 overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
+        {/* Desktop Background Image */}
         <Image
-          src="/assets/alam/alam1.webp"
+          src="/assets/alam/alam3.webp"
           alt="Pemandangan Desa Jadikarya"
           fill
           priority
           sizes="100vw"
           quality={90}
-          className="object-cover object-center"
+          className="hidden sm:block object-cover object-center"
+        />
+        {/* Mobile Background Image (Portrait) */}
+        <Image
+          src="/assets/alam/potrait-alam3.webp"
+          alt="Pemandangan Desa Jadikarya"
+          fill
+          priority
+          sizes="100vw"
+          quality={90}
+          className="block sm:hidden object-cover object-center"
         />
         {/* Dark overlay with low opacity to dim the background image */}
-        <div className="absolute inset-0 bg-[#041a12]/50" />
+        <div className="absolute inset-0 bg-[#041a12]/25" />
         {/* Top subtle dark vignette for navbar legibility */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/20" />
       </div>
 
       {/* Professional Gradient Fade from Bottom to Top (Green, transitions into next section) */}
-      <div className="absolute bottom-0 left-0 right-0 h-36 sm:h-48 lg:h-56 bg-gradient-to-t from-[#0A4532] via-[#0A4532]/60 to-transparent z-[5] pointer-events-none" />
+      <div className="absolute bottom-0 left-0 right-0 h-36 sm:h-48 lg:h-56 bg-gradient-to-t from-[#0A4532] via-[#0A4532]/50 to-transparent z-[3] pointer-events-none" />
 
       {/* Hero Content Container with wide padding */}
       <div className="relative z-10 w-full px-6 sm:px-12 lg:px-16 text-white">

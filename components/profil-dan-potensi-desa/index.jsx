@@ -12,9 +12,9 @@ const potensiSectors = [
     title: "AGROFORESTIK",
     description:
       "DIDUKUNG TANAH YANG SUBUR, DESA JADIKARYA MENGHASILKAN BERBAGAI KOMODITAS UNGGULAN SEPERTI JAGUNG, KAPULAGA, DURIAN, ALPUKAT, MANGGIS, DAN LADA YANG MENJADI PENOPANG PEREKONOMIAN MASYARAKAT.",
-    images: ["/assets/sawah.jpg", "/assets/sawah.jpg", "/assets/potensi_wisata.png"],
+    images: ["/assets/agroforestik/duren1.webp", "/assets/agroforestik/duren1.webp", "/assets/potensi_wisata.png"],
     thumbLabel: "Sektor Agroforestik",
-    thumbImg: "/assets/sawah.jpg",
+    thumbImg: "/assets/agroforestik/duren1.webp",
   },
   {
     id: "Gudang buah",
