@@ -84,13 +84,14 @@ export default function AgendaRutinan() {
           <div className="absolute top-0 left-6 right-6 h-1 bg-[#0A4532] rounded-b-full" />
 
           {/* Sliding Track Viewport */}
-          <div className="relative overflow-hidden w-full py-2">
+          <div className="relative w-full py-2">
 
-            {/* Smooth Horizontal Track */}
-            <div
-              className="flex w-full transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)]"
-              style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-            >
+            <div className="overflow-hidden">
+              {/* Smooth Horizontal Track */}
+              <div
+                className="flex w-full transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)]"
+                style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+              >
               {Array.from({ length: totalSlides }).map((_, slideIndex) => {
                 const slideItems = agendaList.slice(
                   slideIndex * itemsPerPage,
@@ -133,18 +134,19 @@ export default function AgendaRutinan() {
                 );
               })}
             </div>
+            </div>
 
             {/* Carousel Navigation Buttons */}
             <button
               onClick={prevSlide}
-              className="absolute left-2 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white/90 hover:bg-white text-[#0A4532] shadow-xl flex items-center justify-center backdrop-blur-md transition-all hover:scale-110 border border-slate-200"
+              className="absolute -left-5 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white/90 hover:bg-white text-[#0A4532] shadow-xl flex items-center justify-center backdrop-blur-md transition-all hover:scale-110 border border-slate-200"
               aria-label="Previous Slide"
             >
               <ChevronLeft size={24} />
             </button>
             <button
               onClick={nextSlide}
-              className="absolute right-2 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white/90 hover:bg-white text-[#0A4532] shadow-xl flex items-center justify-center backdrop-blur-md transition-all hover:scale-110 border border-slate-200"
+              className="absolute -right-5 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white/90 hover:bg-white text-[#0A4532] shadow-xl flex items-center justify-center backdrop-blur-md transition-all hover:scale-110 border border-slate-200"
               aria-label="Next Slide"
             >
               <ChevronRight size={24} />

@@ -1,4 +1,5 @@
-import { MessageSquare } from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -92,7 +93,7 @@ export default function HeroSection() {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-4 w-4 bg-emerald-500"></span>
           </span>
-          <MessageSquare size={26} className="text-white fill-white" />
+          <FontAwesomeIcon icon={faWhatsapp} className="text-white" style={{ fontSize: 26 }} />
         </a>
       </div>
     </section>

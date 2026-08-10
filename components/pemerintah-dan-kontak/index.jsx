@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import {
   MapPin,
   Phone,
@@ -7,9 +9,6 @@ import {
   ArrowRight,
   ShieldCheck,
   Facebook,
-  Instagram,
-  Youtube,
-  MessageCircle,
 } from "lucide-react";
 
 export default function PemerintahDanKontak() {
@@ -23,9 +22,9 @@ export default function PemerintahDanKontak() {
   ];
 
   const socialLinks = [
-    { name: "WhatsApp", icon: MessageCircle, href: "https://wa.me/6282126967720" },
-    { name: "Instagram", icon: Instagram, href: "#" },
-    { name: "YouTube", icon: Youtube, href: "#" },
+    { name: "WhatsApp", icon: faWhatsapp, href: "https://wa.me/6282126967720" },
+    { name: "Instagram", icon: faInstagram, href: "#" },
+    { name: "YouTube", icon: faYoutube, href: "#" },
   ];
 
   return (
@@ -64,7 +63,6 @@ export default function PemerintahDanKontak() {
               </span>
               <div className="flex items-center gap-3">
                 {socialLinks.map((item, idx) => {
-                  const Icon = item.icon;
                   return (
                     <a
                       key={idx}
@@ -74,7 +72,7 @@ export default function PemerintahDanKontak() {
                       className="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 text-[#FFE7D2] flex items-center justify-center transition-all hover:scale-110 border border-white/15"
                       aria-label={item.name}
                     >
-                      <Icon size={18} />
+                      <FontAwesomeIcon icon={item.icon} style={{ fontSize: 18 }} />
                     </a>
                   );
                 })}
