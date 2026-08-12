@@ -1,0 +1,27 @@
+{
+"type": "FeatureCollection",
+"name": "titik_potensi",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{"type":"Feature","properties":{"id":null,"NamaLokasi":"SMP N 4 Langkaplancar","Kategori":"Pendidikan"},"geometry":{"type":"Point","coordinates":[108.476822868122341,-7.56251326026033]}},
+{"type":"Feature","properties":{"id":null,"NamaLokasi":"Puskesmas Jadikarya","Kategori":"Kesehatan"},"geometry":{"type":"Point","coordinates":[108.476922239442544,-7.5618567088274]}},
+{"type":"Feature","properties":{"id":null,"NamaLokasi":"SD N 1 Jadikarya","Kategori":"Pendidikan"},"geometry":{"type":"Point","coordinates":[108.477388260780955,-7.567422237926464]}},
+{"type":"Feature","properties":{"id":null,"NamaLokasi":"Gudang Buah Sumber Rezeki","Kategori":"Ekonomi"},"geometry":{"type":"Point","coordinates":[108.477290052074494,-7.568793106055187]}},
+{"type":"Feature","properties":{"id":null,"NamaLokasi":"Kantor Kepala desa Jadikarya","Kategori":"Pelayanan"},"geometry":{"type":"Point","coordinates":[108.477602262665854,-7.568449647021863]}},
+{"type":"Feature","properties":{"id":null,"NamaLokasi":"SD N 3 Jadikarya","Kategori":"Pendidikan"},"geometry":{"type":"Point","coordinates":[108.487386587555946,-7.569069087905214]}},
+{"type":"Feature","properties":{"id":null,"NamaLokasi":"SPPG Jadikarya","Kategori":"Pelayanan"},"geometry":{"type":"Point","coordinates":[108.503042773587168,-7.561300630509654]}},
+{"type":"Feature","properties":{"id":null,"NamaLokasi":"Posyandu Melati 1","Kategori":"Kesehatan"},"geometry":{"type":"Point","coordinates":[108.47720947055096,-7.568359272432994]}},
+{"type":"Feature","properties":{"id":null,"NamaLokasi":"Masjid Al-Hidayah Lebakjero","Kategori":"Keagamaan"},"geometry":{"type":"Point","coordinates":[108.490780949268469,-7.569289500906681]}},
+{"type":"Feature","properties":{"id":null,"NamaLokasi":"DKM Al-Huda","Kategori":"Keagamaan"},"geometry":{"type":"Point","coordinates":[108.478992794997325,-7.562667917186966]}},
+{"type":"Feature","properties":{"id":null,"NamaLokasi":"Kios Bumdes Jadikarya","Kategori":"UMKM"},"geometry":{"type":"Point","coordinates":[108.476915994323988,-7.562341607339087]}},
+{"type":"Feature","properties":{"id":null,"NamaLokasi":"DKM AL-Anwar","Kategori":"Keagamaan"},"geometry":{"type":"Point","coordinates":[108.477827180872225,-7.573251973238157]}},
+{"type":"Feature","properties":{"id":null,"NamaLokasi":"DKM Al-Falah","Kategori":"Keagamaan"},"geometry":{"type":"Point","coordinates":[108.507150890292081,-7.560042988289452]}},
+{"type":"Feature","properties":{"id":null,"NamaLokasi":"SD N 2 Jadikarya","Kategori":"Pendidikan"},"geometry":{"type":"Point","coordinates":[108.507562000639723,-7.558651597834537]}},
+{"type":"Feature","properties":{"id":null,"NamaLokasi":"DKM Jami' Al-Abror","Kategori":"Keagamaan"},"geometry":{"type":"Point","coordinates":[108.48477311440972,-7.576020148596291]}},
+{"type":"Feature","properties":{"id":null,"NamaLokasi":"Rain Forest Ecological","Kategori":"Agroforestik"},"geometry":{"type":"Point","coordinates":[108.504005053364864,-7.57677081140936]}},
+{"type":"Feature","properties":{"id":null,"NamaLokasi":"Potensi keripik singkong Jadikarya","Kategori":"UMKM"},"geometry":{"type":"Point","coordinates":[108.492895095825062,-7.568844594067706]}},
+{"type":"Feature","properties":{"id":null,"NamaLokasi":"Pengolahan Kayu","Kategori":"UMKM"},"geometry":{"type":"Point","coordinates":[108.502774839948614,-7.561371976162452]}},
+{"type":"Feature","properties":{"id":null,"NamaLokasi":"Posyandu Melati 2","Kategori":"Kesehatan"},"geometry":{"type":"Point","coordinates":[108.476342156344955,-7.562165418372212]}},
+{"type":"Feature","properties":{"id":null,"NamaLokasi":"Penghasil Kelapa","Kategori":"UMKM"},"geometry":{"type":"Point","coordinates":[108.493217047821503,-7.566736517419264]}}
+]
+}
