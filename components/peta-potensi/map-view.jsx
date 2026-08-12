@@ -50,7 +50,7 @@ function buildPinIcon(L, color) {
   });
 }
 
-const DEFAULT_IMAGE = "/assets/sawah.jpg";
+const DEFAULT_IMAGE = "/assets/persawahan/sawah.webp";
 
 const LOCATION_IMAGES = {
   "Gudang Buah Sumber Rezeki": "/assets/gudangBuah/gudang-buah1.webp",

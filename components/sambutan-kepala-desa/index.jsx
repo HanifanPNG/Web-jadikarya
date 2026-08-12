@@ -6,7 +6,7 @@ export default function App() {
     <section
       id="sambutan"
       className="relative py-16 bg-[#F8FAF8] text-slate-800 overflow-hidden min-h-screen flex items-center"
-      style={{ fontFamily: "'Inter', sans-serif" }}
+      style={{ fontFamily: "'var(--font-inter)', sans-serif" }}
     >
       {}
       {/* Subtle decorative grid background pattern */}

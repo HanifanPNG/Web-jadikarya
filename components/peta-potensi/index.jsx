@@ -98,16 +98,12 @@ export default function PetaPotensiPage() {
         <div className="relative z-10 w-full px-6 sm:px-12 lg:px-16">
           <div className="max-w-6xl mx-auto text-center">
             <h1
-              data-aos="fade-up"
-              data-aos-delay="50"
               className="font-inter font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight text-white drop-shadow-lg leading-tight mb-4"
             >
               Peta Potensi <br /> Desa{" "}
               <span className="text-yellow-500">Jadikarya</span>
             </h1>
             <p
-              data-aos="fade-up"
-              data-aos-delay="100"
               className="text-white/80 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl mx-auto"
             >
               Peta interaktif berbasis QGIS yang menampilkan sebaran potensi,

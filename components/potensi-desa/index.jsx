@@ -50,14 +50,11 @@ export default function PotensiDesaPage({ initialSector }) {
         <div className="relative z-10 w-full px-6 sm:px-12 lg:px-16">
           <div className="max-w-6xl mx-auto text-center">
             <h1
-              data-aos="fade-up"
               className="font-inter font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight text-white drop-shadow-lg leading-tight mb-4"
             >
               Potensi <br /> Desa <span className="text-yellow-500">Jadikarya</span>
             </h1>
             <p
-              data-aos="fade-up"
-              data-aos-delay="50"
               className="text-white/80 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl mx-auto"
             >
               {activeSector.subtitle} — Desa Jadikarya, Kecamatan Langkaplancar, Kabupaten Pangandaran

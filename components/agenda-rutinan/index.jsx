@@ -17,19 +17,19 @@ export default function AgendaRutinan() {
       id: 2,
       title: " Pengajian fatayatan (Ibu-ibu fatayat)",
       description: "Dilaksanakan setiap satu bulan sekali di Balai Desa Jadikarya sebagai forum silaturahmi, pembinaan keagamaan, dan pemberdayaan perempuan.",
-      image: "/assets/potensi_wisata.png",
+      image: "/assets/dkm/al_huda.webp",
     },
     {
       id: 3,
       title: "Pengajian bulanan (MUI)",
       description: "Dilaksanakan setiap satu bulan sekali dengan jadwal sekitar dua minggu setelah kegiatan Fatayat.",
-      image: "/assets/sawah.jpg",
+      image: "/assets/dkm/al_anwar.webp",
     },
     {
       id: 4,
       title: "Pengajian PHBI",
       description: "Kegiatan pengajian yang diselenggarakan pada setiap peringatan hari besar Islam, seperti Maulid Nabi Muhammad SAW, Tahun Baru Islam (1 Muharam), Isra Mikraj, Nuzulul Qur'an, dan momentum keagamaan lainnya.",
-      image: "/assets/sawah.jpg",
+      image: "/assets/dkm/al_hidayah.webp",
     },
   ];
 

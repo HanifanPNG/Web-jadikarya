@@ -13,7 +13,6 @@ export default function HeroSection() {
           src="/assets/alam/alam3.webp"
           alt="Pemandangan Desa Jadikarya"
           fill
-          priority
           sizes="100vw"
           quality={90}
           className="hidden sm:block object-cover object-center"
@@ -39,11 +38,7 @@ export default function HeroSection() {
 
       {/* Hero Content Container with wide padding */}
       <div className="relative z-10 w-full px-6 sm:px-12 lg:px-16 text-white">
-        <div
-          data-aos="fade-up"
-          data-aos-duration="800"
-          className="max-w-3xl space-y-5"
-        >
+        <div className="max-w-3xl space-y-5">
           {/* Plain Text Location Sub-header */}
           <h3 className="font-semibold text-sm sm:text-base text-white tracking-wide drop-shadow-md">
             Langkaplancar - Pangandaran - Jawa Barat

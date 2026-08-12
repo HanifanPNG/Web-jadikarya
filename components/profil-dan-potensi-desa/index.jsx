@@ -127,7 +127,6 @@ export default function ProfilDanPotensiDesa() {
                 src="/assets/persawahan/sawah3.jpeg"
                 alt="Pemandangan Gunung dan Sawah Desa Jadikarya"
                 fill
-                priority
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover object-center hover:scale-105 transition-transform duration-700"
               />

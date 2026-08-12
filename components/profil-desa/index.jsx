@@ -40,7 +40,6 @@ export default function ProfilDesaPage() {
             src="/assets/alam/alam3.webp"
             alt="Pemandangan Desa Jadikarya"
             fill
-            priority
             sizes="100vw"
             quality={90}
             className="hidden sm:block object-cover object-center"
@@ -68,14 +67,11 @@ export default function ProfilDesaPage() {
             {/* ─── LEFT COLUMN (sticky) ─── */}
             <div className="lg:sticky lg:top-[100px] self-start text-center lg:text-left">
               <h1
-                data-aos="fade-up"
                 className="font-inter font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight text-white drop-shadow-lg leading-tight mb-4"
               >
                 Profil <br /> Desa <span className="text-yellow-500">Jadikarya</span>
               </h1>
               <p
-                data-aos="fade-up"
-                data-aos-delay="50"
                 className="text-white/80 text-sm sm:text-base md:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0"
               >
                 Mengenal lebih dekat Desa Jadikarya, visi misi, kelembagaan, dan
@@ -86,8 +82,6 @@ export default function ProfilDesaPage() {
 
             {/* ─── RIGHT COLUMN (scrollable note cards) ─── */}
             <div
-              data-aos="fade-up"
-              data-aos-delay="150"
               className="lg:max-h-[calc(100vh-10rem)] lg:overflow-y-auto space-y-4 lg:pr-1 scrollbar-note"
             >
               {tentangDesa.cards.map((card, i) => {
