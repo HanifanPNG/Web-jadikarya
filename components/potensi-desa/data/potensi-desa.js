@@ -3,7 +3,7 @@ export const potensiDesaData = [
     id: "agroforest",
     title: "Sektor Agroforestik",
     subtitle: "Potensi Pertanian & Perhutanan Sosial",
-    heroImage: "/assets/agroforestik/duren1.webp",
+    heroImage: "/assets/agroforestik/agroforestik3.webp",
     description:
       "Didukung tanah yang subur, Desa Jadikarya menghasilkan berbagai komoditas unggulan seperti jagung, kapulaga, durian, alpukat, manggis, dan lada yang menjadi penopang perekonomian masyarakat.",
     detailDescription:
@@ -19,7 +19,7 @@ export const potensiDesaData = [
     id: "gudang-buah",
     title: "Gudang Buah (Sumber Rezeki)",
     subtitle: "Sortir & Distribusi Buah",
-    heroImage: "/assets/gudangBuah/gudang-buah2.webp",
+    heroImage: "/assets/gudangBuah/gudang-buah1.webp",
     description:
       "Gudang buah durian dan manggis merupakan pusat sortir dalam negeri maupun luar negeri yang menjadi sumber rezeki utama masyarakat Desa Jadikarya.",
     detailDescription:
@@ -35,7 +35,7 @@ export const potensiDesaData = [
     id: "persawahan",
     title: "Sektor Persawahan & Perkebunan",
     subtitle: "Lanskap Alam & Potensi Wisata",
-    heroImage: "/assets/persawahan/sawah3.jpeg",
+    heroImage: "/assets/persawahan/sawah.webp",
     description:
       "Keindahan sungai alam dan perbukitan hijau Langkaplancar potensial dikembangkan menjadi destinasi wisata arung jeram dan desa wisata berkelanjutan.",
     detailDescription:
@@ -51,7 +51,7 @@ export const potensiDesaData = [
     id: "umkm",
     title: "UMKM Pusat Unggulan Jadikarya",
     subtitle: "Peternakan & Perikanan",
-    heroImage: "/assets/sawah.jpg",
+    heroImage: "/assets/umkm/kios.webp",
     description:
       "Pemeliharaan ternak sapi, kambing, dan budidaya ikan air tawar yang dikelola oleh kelompok tani dan pemuda desa untuk ketahanan pangan lokal.",
     detailDescription:
@@ -67,7 +67,7 @@ export const potensiDesaData = [
     id: "pendidikan",
     title: "Sektor Pendidikan",
     subtitle: "Pengembangan SDM Masyarakat",
-    heroImage: "/assets/sawah.jpg",
+    heroImage: "/assets/pendidikan/sd_2_jadikarya.webp",
     description:
       "Pengembangan sumber daya manusia melalui peningkatan akses dan mutu pendidikan di Desa Jadikarya.",
     detailDescription:
@@ -83,7 +83,7 @@ export const potensiDesaData = [
     id: "kesehatan",
     title: "Sektor Kesehatan",
     subtitle: "Layanan & Ketahanan Kesehatan",
-    heroImage: "/assets/sawah.jpg",
+    heroImage: "/assets/kesehatan/posyandu_1.webp",
     description:
       "Peningkatan layanan kesehatan dan kesadaran hidup sehat masyarakat yang didukung oleh fasilitas posyandu dan tenaga kesehatan desa.",
     detailDescription:
@@ -99,7 +99,7 @@ export const potensiDesaData = [
     id: "layanan-publik",
     title: "Pelayanan Masyarakat",
     subtitle: "Layanan Administrasi & Publik",
-    heroImage: "/assets/sawah.jpg",
+    heroImage: "/assets/pelayanan/kades.webp",
     description:
       "Pelayanan yang mudah, cepat, dan transparan untuk seluruh warga melalui sistem pelayanan terpadu pemerintahan desa.",
     detailDescription:

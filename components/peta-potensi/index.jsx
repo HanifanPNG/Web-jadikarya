@@ -81,7 +81,7 @@ export default function PetaPotensiPage() {
       <section className="relative min-h-[60vh] flex items-center pt-32 pb-16 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/assets/sawah.jpg"
+            src="/assets/alam/alam3.webp"
             alt="Pemandangan Desa Jadikarya"
             fill
             priority

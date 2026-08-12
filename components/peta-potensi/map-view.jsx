@@ -54,10 +54,25 @@ const DEFAULT_IMAGE = "/assets/sawah.jpg";
 
 const LOCATION_IMAGES = {
   "Gudang Buah Sumber Rezeki": "/assets/gudangBuah/gudang-buah1.webp",
-  "Rain Forest Ecological": "/assets/agroforestik/agroforestik2.webp",
-  "Potensi keripik singkong Jadikarya": "/assets/persawahan/sawah3.jpeg",
-  "Penghasil Kelapa": "/assets/persawahan/sawah4.webp",
-  "Pengolahan Kayu": "/assets/alam/alam1.webp",
+  "Rain Forest Ecological": "/assets/agroforestik/agroforestik3.webp",
+  "Potensi keripik singkong Jadikarya": "/assets/umkm/kripik.webp",
+  "Penghasil Kelapa": "/assets/umkm/penghasil_kelapa.webp",
+  "Pengolahan Kayu": "/assets/umkm/pengolah_kayu.webp",
+  "Kios Bumdes Jadikarya": "/assets/umkm/kios.webp",
+  "Puskesmas Jadikarya": "/assets/kesehatan/puskesmas1.webp",
+  "Posyandu Melati 2": "/assets/kesehatan/posyandu_2.webp",
+  "Posyandu Melati 1": "/assets/kesehatan/posyandu_1.webp",
+  "SD N 1 Jadikarya": "/assets/pendidikan/sd_1_jadikarya.webp",
+  "SD N 2 Jadikarya": "/assets/pendidikan/sd_2_jadikarya.webp",
+  "SD N 3 Jadikarya": "/assets/pendidikan/sd_3_jadikarya.webp",
+  "SMP N 4 Langkaplancar": "/assets/pendidikan/smp4.webp",
+  "Kantor Kepala desa Jadikarya": "/assets/pelayanan/kades.webp",
+  "SPPG Jadikarya": "/assets/pelayanan/sppg.webp",
+  "DKM Al-Huda": "/assets/dkm/al_huda.webp",
+  "DKM AL-Anwar": "/assets/dkm/al_anwar.webp",
+  "DKM Jami' Al-Abror": "/assets/dkm/al_abror.webp",
+  "Masjid Al-Hidayah Lebakjero":"/assets/dkm/al_hidayah.webp",
+  "DKM Al-Falah": "/assets/dkm/al_falah.webp"
 };
 
 function getLocationImage(name) {
