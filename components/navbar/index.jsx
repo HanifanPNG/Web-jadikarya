@@ -60,7 +60,7 @@ export default function Navbar() {
               className="object-contain w-full h-full"
             />
           </div>
-          <span className="font-inter text-white font-bold text-xl sm:text-2xl tracking-wide group-hover:text-[#FFE7D2] transition-colors">
+          <span className="font-inter text-white font-bold text-lg sm:text-xl tracking-tight group-hover:text-[#FFE7D2] transition-colors">
             Desa Jadikarya
           </span>
         </Link>
@@ -82,7 +82,7 @@ export default function Navbar() {
               >
                 {item.label}
                 {isActive && (
-                  <span className="absolute left-0 right-0 bottom-[-4px] h-[3px] bg-[#FFE7D2] rounded-full shadow-sm" />
+                  <span className="absolute left-0 right-0 bottom-[-4px] h-[3px] bg-[#0A4532] rounded-full shadow-sm" />
                 )}
               </Link>
             ) : (

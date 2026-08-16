@@ -101,7 +101,7 @@ export default function PetaPotensiPage() {
               className="font-inter font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight text-white drop-shadow-lg leading-tight mb-4"
             >
               Peta Potensi <br /> Desa{" "}
-              <span className="text-yellow-500">Jadikarya</span>
+              <span className="text-yellow-500 font-lobster">Jadikarya</span>
             </h1>
             <p
               className="text-white/80 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl mx-auto"

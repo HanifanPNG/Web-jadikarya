@@ -11,7 +11,7 @@ const potensiSectors = [
     slug: "agroforest",
     title: "AGROFORESTIK",
     description:
-      "DIDUKUNG TANAH YANG SUBUR, DESA JADIKARYA MENGHASILKAN BERBAGAI KOMODITAS UNGGULAN SEPERTI JAGUNG, KAPULAGA, DURIAN, ALPUKAT, MANGGIS, DAN LADA YANG MENJADI PENOPANG PEREKONOMIAN MASYARAKAT.",
+      "Hamparan kebun durian di lereng perbukitan Jadikarya menjadi warisan agroforetik khas desa, menghasilkan buah berkualitas yang dikenal hingga luar daerah.",
     images: ["/assets/agroforestik/duren1.webp", "/assets/agroforestik/agroforestik2.webp", "/assets/agroforestik/agroforestik3.webp", "/assets/agroforestik/agroforestik4.webp"],
     thumbLabel: "Sektor Agroforestik",
     thumbImg: "/assets/agroforestik/duren1.webp",
@@ -31,7 +31,7 @@ const potensiSectors = [
     slug: "persawahan&kebun",
     title: "SEKTOR PERSAWAHAN & PERKEBUNAN",
     description:
-      "KEINDAHAN SUNGAI ALAM DAN PERBUKITAN HIJAU LANGKAPLANCAR POTENSIAL DIKEMBANGKAN MENJADI DESTINASI WISATA ARUNG JERAM DAN DESA WISATA BERKELANJUTAN.",
+      "Dikelilingi perbukitan hijau, sawah dan kebun Desa Jadikarya terus diolah secara turun temurun untuk menghasilkan padi, palawija dan hasil perkebunan yang unggul.",
     images: ["/assets/persawahan/sawah3.jpeg", "/assets/persawahan/sawah4.webp", "/assets/persawahan/sawah.webp", "/assets/persawahan/sawah6.webp", "/assets/persawahan/sawah5.webp"],
     thumbLabel: "Sektor Persawahan & Perkebunan",
     thumbImg: "/assets/persawahan/sawah3.jpeg",
@@ -41,7 +41,7 @@ const potensiSectors = [
     slug: "umkm",
     title: "UMKM PUSAT UNGGULAN JADIKARYA",
     description:
-      "PEMELIHARAAN TERNAK SAPI, KAMBING, DAN BUDIDAYA IKAN AIR TAWAR YANG DIKELOLA OLEH KELOMPOK TANI DAN PEMUDA DESA UNTUK KETAHANAN PANGAN LOKAL.",
+      "Terdapat UMKM yang dikelola BUMDes dan warga desa yang menjalankan usaha rumahan mulai dari gula aren, singkong, dan lain-lain jadi produk siap jual dan dipasarkan.",
     images: ["/assets/umkm/kios.webp", "/assets/umkm/penghasil_kelapa.webp", "/assets/umkm/pengolah_kayu.webp", "/assets/umkm/kripik.webp", "/assets/umkm/gula_merah.webp"],
     thumbLabel: "UMKM Pusat Unggulan Jadikarya",
     thumbImg: "/assets/umkm/kios.webp",
@@ -51,7 +51,7 @@ const potensiSectors = [
     slug: "pendidikan",
     title: "SEKTOR PENDIDIKAN",
     description:
-      "PERAN BUMDES DAN UMKM DESA DALAM MENDISTRIBUSIKAN HASIL BUMI SERTA MEMAJUKAN KESEJAHTERAAN MASYARAKAT SECARA MANDIRI DAN INKLUSIF.",
+      "Dengan beberapa bangunan sekolah yang tersebar dari setiap dusun, Desa Jadikarya punya potensi besar untuk terus meningkatkan mutu pendidikan dan akses belajar bagi anak-anak desa.",
     images: [ "/assets/pendidikan/sd_1_jadikarya.webp", "/assets/pendidikan/sd_2_jadikarya.webp", "/assets/pendidikan/sd_3_jadikarya.webp", "/assets/pendidikan/smp4.webp"],
     thumbLabel: "Sektor Pendidikan",
     thumbImg: "/assets/pendidikan/sd_1_jadikarya.webp"
@@ -61,7 +61,7 @@ const potensiSectors = [
     slug: "kesehatan",
     title: "SEKTOR KESEHATAN",
     description:
-      "PERAN BUMDES DAN UMKM DESA DALAM MENDISTRIBUSIKAN HASIL BUMI SERTA MEMAJUKAN KESEJAHTERAAN MASYARAKAT SECARA MANDIRI DAN INKLUSIF.",
+      "Posyandu yang tersebar di berbagai dusun rutin memantau tumbuh kembang anak dan kesehatan ibu, didukung Puskesmas Jadikarya sebagai layanan kesehatan utama desa.",
     images: ["/assets/kesehatan/puskesmas1.webp", "/assets/kesehatan/posyandu_1.webp", "/assets/kesehatan/posyandu_2.webp", "/assets/kesehatan/posyandu_3.webp"],
     thumbLabel: "Sektor Kesehatan",
     thumbImg: "/assets/kesehatan/puskesmas1.webp",
@@ -71,7 +71,7 @@ const potensiSectors = [
     slug: "layanan-publik",
     title: "PELAYANAN MASYARAKAT",
     description:
-      "PERAN BUMDES DAN UMKM DESA DALAM MENDISTRIBUSIKAN HASIL BUMI SERTA MEMAJUKAN KESEJAHTERAAN MASYARAKAT SECARA MANDIRI DAN INKLUSIF.",
+      "Desa Jadikarya memiliki beberapa fasilitas pelayanan publik yang ramah untuk kepengurusan administrasi maupun layanan program nasional pemerintah.",
     images: ["/assets/pelayanan/kades.webp", "/assets/pelayanan/kadus.webp", "/assets/pelayanan/sppg.webp"],
     thumbLabel: "Pelayanan Masyarakat",
     thumbImg: "/assets/pelayanan/kades.webp",
@@ -104,7 +104,7 @@ export default function ProfilDanPotensiDesa() {
             </div>
 
             <p className="text-white/90 text-base sm:text-lg leading-relaxed font-normal">
-              Desa Jadikarya merupakan desa agraris di Kecamatan Langkaplancar, Kabupaten Pangandaran, yang dikenal sebagai penghasil gula aren, gula kelapa, durian, dan manggis. Ganti kalimat ini dengan deskripsi resmi dari perangkat desa.
+              Terletak di dataran tinggi Kabupaten Pangandaran, Desa Jadikarya tumbuh menjadi desa agraris yang subur dan penuh potensi. Dari 5 dusunnya, hasil bumi seperti padi, kelapa, manggis, dan durian menjadi komoditas andalan yang dikelola masyarakat secara turun-temurun.
             </p>
 
             <div>
@@ -124,7 +124,7 @@ export default function ProfilDanPotensiDesa() {
           >
             <div className="relative w-full h-[320px] sm:h-[400px] lg:h-[480px] rounded-tl-[140px] sm:rounded-tl-[180px] lg:rounded-tl-[220px] overflow-hidden shadow-2xl">
               <Image
-                src="/assets/persawahan/sawah3.jpeg"
+                src="/assets/persawahan/sawah4.webp"
                 alt="Pemandangan Gunung dan Sawah Desa Jadikarya"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -216,7 +216,7 @@ export default function ProfilDanPotensiDesa() {
                     {sector.title}
                   </h4>
 
-                  <p className="text-white/90 max-w-xl text-sm sm:text-base font-normal leading-relaxed tracking-wide uppercase drop-shadow">
+                  <p className="text-white/90 max-w-xl text-sm sm:text-base font-normal leading-relaxed tracking-wide drop-shadow">
                     {sector.description}
                   </p>
                 </div>

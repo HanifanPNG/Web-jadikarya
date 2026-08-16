@@ -24,6 +24,7 @@ module.exports = {
       fontFamily: {
         serif: ["var(--font-playfair)", "serif"],
         sans: ["var(--font-jakarta)", "sans-serif"],
+        lobster: ["var(--font-lobster)", "cursive"],
       },
       borderRadius: {
         '4xl': '2rem',

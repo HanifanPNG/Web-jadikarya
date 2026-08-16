@@ -1,6 +1,6 @@
 import "./globals.css";
 import AOSInit from "@/components/aos-init";
-import { Inter, Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
+import { Inter, Playfair_Display, Plus_Jakarta_Sans, Lobster } from "next/font/google";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -20,6 +20,13 @@ const plusJakartaSans = Plus_Jakarta_Sans({
   display: "swap",
 });
 
+const lobster = Lobster({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-lobster",
+  display: "swap",
+});
+
 export const metadata = {
   title: "Desa Jadikarya - Kecamatan Langkaplancar, Kabupaten Pangandaran",
   description:
@@ -29,7 +36,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="id" className={`${inter.variable} ${playfair.variable} ${plusJakartaSans.variable}`}>
+    <html lang="id" className={`${inter.variable} ${playfair.variable} ${plusJakartaSans.variable} ${lobster.variable}`}>
       <body className="antialiased bg-white text-slate-800 min-h-screen">
         <AOSInit />
         {children}
