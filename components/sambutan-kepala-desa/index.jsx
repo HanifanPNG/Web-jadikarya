@@ -22,7 +22,7 @@ export default function App() {
         
         <div
           data-aos="fade-up"
-          className="text-center mb-14 sm:mb-16"
+          className="text-center mb-14"
         >
             <div className="flex flex-col items-center space-y-1">
               <h3 className="font-inter text-2xl sm:text-3xl font-bold tracking-widest text-[#042F1E] uppercase">
@@ -33,12 +33,12 @@ export default function App() {
         </div>
 
         {}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-14 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-center">
           
           <div
             data-aos="fade-right"
             data-aos-delay="100"
-            className="md:col-span-5 flex flex-col items-center justify-center text-center"
+            className="md:col-span-3 flex flex-col items-center justify-center text-center"
           >
             {/* Photo Frame with decorative border */}
             <div className="relative group">
@@ -46,7 +46,7 @@ export default function App() {
               <div className="absolute -inset-4 bg-[#042F1E]/5 rounded-t-full rounded-b-3xl blur-xl transition-all duration-500 group-hover:bg-[#042F1E]/10" />
 
               {/* Decorative border ring - changed to elegant dark gradient */}
-              <div className="relative w-64 h-[330px] sm:w-68 sm:h-[360px] lg:w-[300px] lg:h-[400px] rounded-t-full rounded-b-3xl p-[3px] bg-gradient-to-b from-[#042F1E]/40 via-[#042F1E]/10 to-[#042F1E]/30 shadow-2xl shadow-[#042F1E]/10">
+              <div className="relative w-48 h-[260px] sm:w-56 sm:h-[300px] lg:w-[240px] lg:h-[330px] rounded-t-full rounded-b-3xl p-[3px] bg-gradient-to-b from-[#042F1E]/40 via-[#042F1E]/10 to-[#042F1E]/30 shadow-2xl shadow-[#042F1E]/10">
                 <div className="relative w-full h-full rounded-t-full rounded-b-[21px] overflow-hidden bg-slate-200">
                   <Image
                     src="/assets/Foto_%20anggota_desa/Drs.DadangSupriatna,M.Pd.jpeg"
@@ -61,11 +61,11 @@ export default function App() {
               </div>
             </div>
 
-            <div className="mt-6 space-y-1.5">
-              <h4 className="font-inter font-bold text-[#042F1E] text-xl sm:text-2xl tracking-wide">
+            <div className="mt-4 space-y-1">
+              <h4 className="font-inter font-bold text-[#042F1E] text-xs sm:text-base tracking-wide">
                 Drs. Dadang Supratna, M.Pd
               </h4>
-              <p className="text-slate-500 font-semibold text-sm sm:text-base tracking-widest uppercase">
+              <p className="text-slate-500 font-semibold text-xs sm:text-sm tracking-widest uppercase">
                 Kepala Desa Jadikarya
               </p>
             </div>
@@ -75,25 +75,22 @@ export default function App() {
           <div
             data-aos="fade-left"
             data-aos-delay="200"
-            className="md:col-span-7 space-y-6"
+            className="md:col-span-9 space-y-6 md:pt-0"
           >
             {/* Large decorative quote mark */}
-            <div className="text-[#042F1E]/10 font-inter text-8xl sm:text-9xl leading-none select-none -mb-10 sm:-mb-14">
+            <div className="text-[#042F1E]/10 font-inter text-6xl sm:text-7xl leading-none select-none -mb-6 sm:-mb-8">
               &ldquo;
             </div>
 
             {/* Quote Text */}
             <blockquote className="relative z-10 pl-2 sm:pl-4">
-              <p className="text-slate-700 italic text-lg sm:text-xl lg:text-2xl leading-relaxed font-inter tracking-wide drop-shadow-sm">
-                Desa Jadikarya merupakan desa agraris di Kecamatan
-                Langkaplancar, Kabupaten Pangandaran, yang dikenal sebagai
-                penghasil gula aren, gula kelapa, durian, dan manggis. Ganti
-                kalimat ini dengan deskripsi resmi dari perangkat desa untuk memberikan gambaran yang lebih komprehensif mengenai visi dan misi kita ke depan.
+              <p className="text-slate-700 italic text-sm sm:text-base leading-relaxed font-inter tracking-wide text-justify">
+                Puji syukur kehadirat Allah SWT atas segala rahmat dan karunia-Nya, sehingga Desa Jadikarya senantiasa diberikan kesehatan, keberkahan, dan kemudahan dalam melaksanakan pembangunan serta pelayanan kepada masyarakat. Desa Jadikarya merupakan bagian dari Kecamatan Langkaplancar, Kabupaten Pangandaran, yang memiliki potensi sumber daya alam, sosial, budaya, serta kehidupan masyarakat yang menjadi kekuatan dalam mendukung pembangunan desa. Pemerintah Desa Jadikarya berkomitmen untuk terus meningkatkan kualitas pelayanan kepada masyarakat, mengembangkan potensi desa, serta mendorong partisipasi aktif seluruh masyarakat dalam menciptakan lingkungan desa yang maju, mandiri, dan harmonis. Kami juga menyambut baik kehadiran mahasiswa Kuliah Kerja Nyata (KKN) Kelompok 142 Universitas Islam Negeri Profesor K.H. Saifuddin Zuhri Purwokerto. Kehadiran mahasiswa KKN diharapkan dapat memberikan kontribusi positif melalui berbagai kegiatan yang bermanfaat bagi masyarakat serta menjadi sarana untuk membangun kerja sama antara perguruan tinggi dan pemerintah desa. Semoga seluruh program dan kegiatan yang dilaksanakan dapat berjalan dengan baik, memberikan manfaat bagi masyarakat Desa Jadikarya, serta meninggalkan pengalaman dan kenangan yang baik bagi seluruh pihak.
               </p>
             </blockquote>
 
             {/* Closing quote mark */}
-            <div className="text-[#042F1E]/10 font-inter text-8xl sm:text-9xl leading-none select-none text-right -mt-8 sm:-mt-12">
+            <div className="text-[#042F1E]/10 font-inter text-6xl sm:text-7xl leading-none select-none text-right -mt-4 sm:-mt-6">
               &rdquo;
             </div>
 
