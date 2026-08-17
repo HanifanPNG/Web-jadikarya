@@ -1,6 +1,6 @@
 import Navbar from "@/components/navbar";
 import PetaPotensiPage from "@/components/peta-potensi";
-import PemerintahDanKontak from "@/components/pemerintah-dan-kontak";
+import PemerintahDanKontak from "@/components/footer.tsx";
 
 export const metadata = {
   title: "Peta Potensi Desa Jadikarya - Langkaplancar, Pangandaran",

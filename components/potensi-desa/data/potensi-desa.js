@@ -8,7 +8,7 @@ export const potensiDesaData = [
       "Didukung tanah yang subur, Desa Jadikarya menghasilkan berbagai komoditas unggulan seperti jagung, kapulaga, durian, alpukat, manggis, dan lada yang menjadi penopang perekonomian masyarakat.",
     detailDescription:
       "Melalui sistem agroforestri, masyarakat mengombinasikan tanaman kehutanan dengan tanaman produktif sehingga hutan tetap lestari sekaligus memberikan manfaat ekonomi. Kelompok Tani Hutan (KTH) Lebak Jero mengelola sekitar 65 hektare lahan perhutanan sosial, termasuk area budidaya jagung yang didukung program swasembada pangan dan penyuluhan rutin kepada petani desa.",
-    commodities: ["Jagung", "Kapulaga", "Durian", "Alpukat", "Manggis", "Lada"],
+    commodities: ["Jagung", "Kecombrang", "Durian", "Alpukat", "Manggis", "Tomat", "Kelapa"],
     highlights: [
       { label: "Luas Perhutanan Sosial", value: "65 Hektare" },
       { label: "Program", value: "Ketahanan Pangan Nasional" },
@@ -56,7 +56,7 @@ export const potensiDesaData = [
       "Pemeliharaan ternak sapi, kambing, dan budidaya ikan air tawar yang dikelola oleh kelompok tani dan pemuda desa untuk ketahanan pangan lokal.",
     detailDescription:
       "UMKM menjadi penggerak ekonomi desa melalui pemeliharaan ternak sapi, kambing, dan budidaya ikan air tawar yang dikelola bersama kelompok tani dan pemuda desa. Upaya ini memperkuat ketahanan pangan lokal sekaligus membuka peluang pendapatan baru bagi masyarakat hingga meningkatkan kesejahteraan warga.",
-    commodities: ["Sapi", "Kambing", "Ikan Air Tawar"],
+    commodities: ["Kripik Singkong", "Gula aren", "Gula Kelapa", "Pengolah Kayu", "Peternak domba"],
     highlights: [
       { label: "Kelola", value: "Kelompok Tani & Pemuda Desa" },
       { label: "Fokus", value: "Ketahanan Pangan Lokal" },

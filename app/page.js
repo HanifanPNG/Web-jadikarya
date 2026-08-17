@@ -3,7 +3,7 @@ import HeroSection from "@/components/hero-section";
 import SambutanKepalaDesa from "@/components/sambutan-kepala-desa";
 import ProfilDanPotensiDesa from "@/components/profil-dan-potensi-desa";
 import AgendaRutinan from "@/components/agenda-rutinan";
-import PemerintahDanKontak from "@/components/pemerintah-dan-kontak";
+import PemerintahDanKontak from "@/components/footer.tsx";
 
 export default function Home() {
   return (
