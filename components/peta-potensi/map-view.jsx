@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
 const GEOJSON_URL = "/geoData/titik_potensi.geojson";
@@ -124,7 +125,6 @@ export default function MapView({ onCounts = null }) {
     let observer = null;
 
     (async () => {
-      const L = (await import("leaflet")).default;
       if (cancelled || !containerRef.current || mapRef.current) return;
 
       map = L.map(containerRef.current, {

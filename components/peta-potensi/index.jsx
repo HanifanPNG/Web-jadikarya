@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import {
   Map,
   TreePine,
@@ -14,7 +15,16 @@ import {
   Maximize2,
   Download,
 } from "lucide-react";
-import MapView from "./map-view";
+
+const MapView = dynamic(() => import("./map-view"), {
+  ssr: false,
+  loading: () => (
+    <div className="w-full h-[420px] sm:h-[520px] lg:h-[560px] bg-slate-100 animate-pulse flex flex-col items-center justify-center rounded-3xl border border-slate-200">
+      <Map className="w-10 h-10 text-slate-400 animate-bounce mb-3" />
+      <span className="text-sm text-slate-500 font-medium">Memuat Peta Interaktif...</span>
+    </div>
+  ),
+});
 
 /* ───────────────────── kategori potensi (GeoJSON) ───────────────────── */
 const categories = [
