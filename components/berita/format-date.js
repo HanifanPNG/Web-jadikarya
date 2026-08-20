@@ -8,5 +8,7 @@ export function formatDate(iso) {
     year: "numeric",
     hour: "2-digit",
     minute: "2-digit",
+    timeZone: "Asia/Jakarta",
+    hour12: false,
   });
 }
