@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import {
@@ -39,8 +40,14 @@ export default function PemerintahDanKontak() {
           {/* Column 1: Brand & Identity (lg:col-span-4) */}
           <div className="lg:col-span-4 space-y-5" data-aos="fade-up">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-tr from-amber-500 to-amber-300 flex items-center justify-center shadow-lg">
-                <span className="text-[#0A4532] font-inter font-bold text-2xl">J</span>
+              <div className="w-14 h-14 flex items-center justify-center overflow-hidden rounded-full bg-white/10 border border-white/20">
+                <Image
+                  src="/assets/logo-desa.png"
+                  alt="Logo Desa Jadikarya"
+                  width={56}
+                  height={56}
+                  className="object-contain w-full h-full"
+                />
               </div>
               <div>
                 <h3 className="font-inter font-bold text-2xl text-[#FFE7D2] tracking-wide">

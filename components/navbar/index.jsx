@@ -16,6 +16,7 @@ export default function Navbar() {
     if (pathname === "/profil-desa") setActiveNav("profil");
     else if (pathname === "/potensi-desa") setActiveNav("potensi");
     else if (pathname === "/peta-potensi") setActiveNav("peta");
+    else if (pathname === "/berita" || pathname.startsWith("/category/")) setActiveNav("berita");
     else if (pathname === "/") setActiveNav("beranda");
     else setActiveNav("");
   }, [pathname]);
@@ -37,6 +38,7 @@ export default function Navbar() {
     { id: "profil", label: "Profil Desa", href: "/profil-desa", isPage: true },
     { id: "potensi", label: "Potensi Desa", href: "/potensi-desa", isPage: true },
     { id: "peta", label: "Peta Potensi", href: "/peta-potensi", isPage: true },
+    { id: "berita", label: "Portal Berita", href: "/berita", isPage: true },
   ];
 
   return (

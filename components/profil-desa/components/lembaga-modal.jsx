@@ -12,7 +12,7 @@ export default function LembagaModal({ isOpen, onClose, lembaga }) {
   if (!lembaga) return null;
 
   const { nama, singkatan, icon: Icon, details } = lembaga;
-  const { since, established, members, chairman, fullDescription, activities, vision } = details || {};
+  const { since, members, chairman, fullDescription, activities, vision } = details || {};
 
   return (
     <Dialog open={isOpen} onClose={onClose} className="relative z-50">
@@ -48,19 +48,6 @@ export default function LembagaModal({ isOpen, onClose, lembaga }) {
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_350px] gap-8">
               {/* Left Column - Main Content */}
               <div className="space-y-6">
-                {/* Established */}
-                {established && (
-                  <div className="rounded-xl bg-gradient-to-br from-slate-50 to-white border border-slate-200 p-4">
-                    <h4 className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2 flex items-center gap-1.5">
-                      <Lightbulb size={14} />
-                      Pendirian
-                    </h4>
-                    <p className="text-sm text-slate-700 leading-relaxed">
-                      {established}
-                    </p>
-                  </div>
-                )}
-
                 {/* Full Description */}
                 {fullDescription && (
                   <div className="prose prose-slate max-w-none text-sm text-slate-700 leading-relaxed">

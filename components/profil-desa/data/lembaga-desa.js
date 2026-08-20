@@ -20,7 +20,6 @@ export const lembagaDesa = [
     icon: Users,
     details: {
       since: "2020",
-      established: "Dibentuk melalui kerjasama Pemerintah Desa dengan masyarakat yang difasilitasi oleh Kabupaten Pangandaran.",
       members: "25 anggota aktif (15 laki-laki, 10 perempuan)",
       chairman: "Dede Suryana",
       fullDescription:
@@ -45,7 +44,6 @@ export const lembagaDesa = [
     icon: Heart,
     details: {
       since: "2018",
-      established: "Diperkenalkan oleh Pemerintah Desa sebagai bagian dari program pembangunan kesejahteraan masyarakat.",
       members: "120 kepala keluarga (80 ibu, 40 bapak)",
       chairman: "Suryani M.Kom",
       fullDescription:
@@ -70,7 +68,6 @@ export const lembagaDesa = [
     icon: Star,
     details: {
       since: "2017",
-      established: "Didirikan oleh pemuda-pemudi Desa Jadikarya sebagai wadah ekspresi dan pengembangan diri.",
       members: "35 anggota (25 laki-laki, 10 perempuan)",
       chairman: "Rudi",
       fullDescription:
@@ -95,7 +92,6 @@ export const lembagaDesa = [
     icon: Building2,
     details: {
       since: "2021",
-      established: "Didirikan sebagai upaya diversifikasi ekonomi desa dan peningkatan PAD.",
       members: "5 pengurus (3 laki-laki, 2 perempuan)",
       chairman: "Dede Suryana",
       fullDescription:
@@ -120,7 +116,6 @@ export const lembagaDesa = [
     icon: Sprout,
     details: {
       since: "2016",
-      established: "Dibentuk melalui inisiatif petani desa untuk meningkatkan produktivitas pertanian.",
       members: "45 anggota (30 laki-laki, 15 perempuan)",
       chairman: "Sutisna",
       fullDescription:
@@ -145,7 +140,6 @@ export const lembagaDesa = [
     icon: Baby,
     details: {
       since: "2015",
-      established: "Dibentuk sebagai bagian dari program kesehatan pemerintah pusat di tingkat desa.",
       members: "15 kader (12 perempuan, 3 laki-laki)",
       chairman: "Suryani",
       fullDescription:
@@ -170,7 +164,6 @@ export const lembagaDesa = [
     icon: Home,
     details: {
       since: "1998",
-      established: "Dibentuk secara adat dan diformalkan dalam pemerintahan desa.",
       members: "120 RT dan 10 RW",
       chairman: "Ketua RT : Budi, Ketua RW : Rudi",
       fullDescription:
