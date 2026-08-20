@@ -6,6 +6,7 @@ import {
   LayoutDashboard,
   Newspaper,
   Tags,
+  Landmark,
   ExternalLink,
   LogOut,
 } from "lucide-react";
@@ -15,6 +16,7 @@ const items = [
   { id: "/admin", label: "Dashboard", icon: LayoutDashboard },
   { id: "/admin/berita", label: "Berita", icon: Newspaper },
   { id: "/admin/tag", label: "Tag", icon: Tags },
+  { id: "/admin/lembaga", label: "Lembaga", icon: Landmark },
 ];
 
 export default function AdminNav() {

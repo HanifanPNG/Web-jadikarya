@@ -6,6 +6,7 @@ import Navbar from "@/components/navbar";
 import PemerintahDanKontak from "@/components/footer.tsx";
 import { getNewsBySlug } from "@/lib/queries";
 import { formatDate } from "@/components/berita/format-date";
+import { sanitizeNewsHtml } from "@/lib/sanitize";
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
@@ -100,7 +101,7 @@ export default async function BeritaDetailPage({ params }) {
 
             <div
               className="prose-content text-slate-700 leading-relaxed text-[15px] sm:text-base"
-              dangerouslySetInnerHTML={{ __html: news.content || "" }}
+              dangerouslySetInnerHTML={{ __html: sanitizeNewsHtml(news.content) }}
             />
 
             {/* Tags below article */}

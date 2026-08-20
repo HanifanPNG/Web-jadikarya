@@ -17,6 +17,8 @@ export const metadata = {
   ],
 };
 
+export const dynamic = "force-dynamic";
+
 export default function ProfilDesaRoute() {
   return (
     <main className="min-h-screen bg-white selection:bg-[#0A4532] selection:text-[#FFE7D2]">
