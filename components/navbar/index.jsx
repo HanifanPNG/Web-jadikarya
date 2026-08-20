@@ -105,6 +105,13 @@ export default function Navbar() {
               </a>
             );
           })}
+
+          <Link
+            href="/admin/login"
+            className="ml-3 inline-flex items-center justify-center rounded-full bg-[#0A4532] px-5 py-2 text-sm font-bold text-white hover:bg-[#063023] transition-colors shadow-lg shadow-black/10"
+          >
+            Login
+          </Link>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -155,6 +162,14 @@ export default function Navbar() {
               </a>
             );
           })}
+
+          <Link
+            href="/admin/login"
+            onClick={() => setMobileMenuOpen(false)}
+            className="mt-3 block rounded-full bg-[#0A4532] px-5 py-2.5 text-center text-sm font-bold text-white hover:bg-[#063023] transition-colors"
+          >
+            Login
+          </Link>
         </div>
       )}
     </header>
